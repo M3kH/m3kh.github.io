@@ -1,0 +1,171 @@
+<html>
+	<head>
+		<title>Ideabile - Communication Solutions</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
+	</head>
+	<body>
+		<!-- Lets create an ascii animation -->
+		<!-- We will use a sprite -->
+	<canvas id="background" resize></canvas>
+
+		<div class="nav">
+			<a href="#main" class="action">Home</a>
+			<a href="#showSoftware" class="action">Softwares</a>
+			<a href="#showLanguages" class="action">Languages</a>
+			<a href="#showSkills" class="action">Skills</a>
+			<a href="#timeLine" class="action">My TimeLine</a>
+		</div>
+
+		<div id="all">
+
+			<div id="main" class="panel">
+
+				<div>
+					<p><b>Mauro Mandracchia</b><br/><small>web - cloud apps - mobile - graphic</small></p>
+					<p><a href="#showSoftware" class="action">Softwares</a> | <a href="#showLanguages" class="action">Languages</a> | <a href="#showSkills" class="action">Skills</a></p>
+					<p><a href="#timeLine" class="action">My Timeline</a></p>
+					<p><small>Esmoreitstraat, 9hs <br/> NL-1055BX Amsterdam</small></p>
+
+					<p>(+31) 621 994742</p>
+					<p>
+					<script type="text/javascript">var wzvcwoe = ['f','a','<','b','i','o','c','"','m','"','r','a','<','d','l','b',':','f','i','n','m','o','=','a','l','n','/','"','.','o','c','i','o','"','i','d','f','a','@','m','l','e','a','l','t','>','e','i','l','e','@','.',' ','c','o','i','m','>','s',' ','e','s','e','a','h','i','=','i','e','a'];var jugbgbr = [6,1,66,58,49,31,30,33,65,41,4,68,0,22,12,25,15,51,21,50,9,64,40,37,60,17,67,47,62,52,35,59,19,8,11,55,18,10,20,43,27,23,44,46,13,48,42,45,36,28,53,29,2,63,14,16,32,69,39,34,5,38,56,57,3,54,7,26,61,24];var clhgjrh= new Array();for(var i=0;i<jugbgbr.length;i++){clhgjrh[jugbgbr[i]] = wzvcwoe[i]; }for(var i=0;i<clhgjrh.length;i++){document.write(clhgjrh[i]);}</script>
+					<noscript>If you want see my email, enable javascript.</noscript></p>
+					<p>cv: <a href="Mauro Mandracchia cv - en.pdf">eng</a> | <a href="Mauro Mandracchia cv - ita.pdf">ita</a></p>
+					<p><a href="https://github.com/M3kH">GitHub</a> | <a href="http://nl.linkedin.com/in/ideabile">Linked-in</a> |  <a href="https://plus.google.com/u/0/112182708561540141315">G+</a> | <a href="http://blog.ideabile.com/">Blog</a></p>
+				</div>
+
+			</div>
+
+			<div id="skills" class="panel">
+				<div class="space">
+					<h2>Skills</h2>
+					<div id="skills_summary">
+					</div>
+				</div>
+			</div>
+
+			<div id="languages" class="panel">
+				<div class="space">
+					<h2>Languages</h2>
+					<div id="languages_summary">
+					</div>
+				</div>
+			</div>
+
+			<div id="software" class="panel">
+				<div class="space">
+					<h2>Software</h2>
+					<div id="software_summary">
+					</div>
+				</div>
+			</div>
+
+			<div id="timeLine" class="panel">
+				<div class="experencies-nav"><a class="action prev" href="#prevExp">&#171; Prev</a> <a class="action next" href="#nextExp">Next &#187;</a></div>
+			</div>
+		</div>
+		<!-- http://ideabile.dev/?st=GEfokv1FuEg#timeLine -->
+		<!-- <iframe width="0" height="0" src="//www.youtube.com/embed/kPdmsYq5x-Q?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
+		<!-- <iframe width="0" height="0" src="//www.youtube.com/embed/VcmDhNn7bqc?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
+
+		<script type="text/javascript" src="bower_components/requirejs/require.js"></script>
+		<script type="text/javascript">
+		var c = {
+			baseUrl: "",
+			// urlArgs: "bust=" +  (new Date()).getTime(),
+			paths: {
+				"underscore": "bower_components/underscore/underscore",
+				"backbone": "bower_components/backbone/backbone",
+				"paper": "bower_components/paper/dist/paper",
+				"paper-full": "bower_components/paper/dist/paper-full",
+				"jquery": "bower_components/jquery/dist/jquery.min",
+				"d3": "bower_components/d3/d3.min"
+			},
+			shim: {
+				'backbone': {
+					deps: ['underscore', 'jquery'],
+					exports: 'Backbone'
+				}
+			}
+		};
+
+		require.config(c);
+		require(["js/app"], function(app){
+			app.init();
+		});
+		</script>
+		<!-- <svg id="crown" height="400" width="400"
+			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
+		  <image x="0" y="0" height="400" width="400"  xlink:href="crown.svg" />
+		</svg> -->
+		<svg version="1.1" id="ideabile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70.998px" height="71.001px" viewBox="0 0 70.998 71.001" enable-background="new 0 0 70.998 71.001" xml:space="preserve">
+		<path d="M65.685,47.962c6.979-7.754,7.114-17.441,0.201-24.779C65.409,12.692,58.691,5.671,48.613,5.326
+			C40.808-1.772,30.786-1.691,23.251,5.13C13.009,5.682,6.117,12.547,5.379,22.333c-7.15,7.813-7.089,17.871-0.247,25.425
+			c0.569,10.478,7.74,17.449,17.892,17.909c7.757,6.999,17.454,7.141,24.794,0.222C58.532,65.402,65.625,58.399,65.685,47.962z
+			 M65.653,46.622c-0.055-1.093-0.176-2.216-0.384-3.375c-0.092-0.517-0.207-1.032-0.326-1.538c0.246,1.983,0.254,3.91,0.058,5.754
+			c-1.434,1.772-3.226,3.428-5.405,4.904c-1.187,0.803-2.45,1.523-3.771,2.171c1.284-2.753,2.263-5.762,2.934-8.915
+			c1.889-2.806,3.473-5.789,4.668-8.867c0.66,1.625,1.199,3.271,1.588,4.929c-0.057-0.498-0.13-1.007-0.225-1.521
+			c-0.251-1.396-0.611-2.796-1.065-4.191c0.692-1.898,1.241-3.828,1.616-5.77c0.374-1.949,0.557-3.82,0.571-5.602
+			C70.453,31.413,70.637,39.797,65.653,46.622z M25.617,57.857c-4.833-3.492-9.179-7.964-12.593-12.821
+			c-0.768-4.275-0.977-8.758-0.672-13.158c2.729-6.198,7.002-11.94,12.113-16.496c5.32-1.65,11.042-2.353,16.629-2.109
+			c5.439,2.725,10.451,6.62,14.52,11.18c2.165,6.971,2.71,14.64,1.617,21.776c-3.395,4.495-7.627,8.534-12.2,11.749
+			C38.699,59.115,31.917,59.027,25.617,57.857z M43.274,59.163c-2.543,1.64-5.167,3.017-7.792,4.072
+			c-2.683-1.003-5.316-2.352-7.838-3.984C32.728,60.053,38.081,60.025,43.274,59.163z M23.463,57.411
+			c-2.573-0.591-5.044-1.365-7.343-2.318c-1.084-2.352-1.935-4.879-2.56-7.514C16.325,51.252,19.7,54.606,23.463,57.411z
+			 M11.847,43.29c-0.739-1.145-1.424-2.306-2.05-3.477c0.339-1.665,0.803-3.319,1.376-4.952C11.158,37.676,11.383,40.504,11.847,43.29
+			z M14.541,19.949c1.63-1.046,3.354-1.975,5.161-2.778c-2.279,2.111-4.384,4.443-6.249,6.929
+			C13.76,22.683,14.124,21.297,14.541,19.949z M31.926,9.952c1.432,0.324,2.855,0.738,4.262,1.234
+			c-2.239-0.045-4.485,0.053-6.713,0.296C30.279,10.941,31.098,10.431,31.926,9.952z M51.238,14.851
+			c0.965,1.536,1.831,3.149,2.583,4.838c-1.895-2.044-3.965-3.95-6.166-5.667C48.872,14.249,50.065,14.527,51.238,14.851z
+			 M59.526,29.48c1.396,2.075,2.59,4.236,3.553,6.444c-1.007,2.596-2.34,5.14-3.933,7.581C59.903,38.946,60.039,34.167,59.526,29.48z
+			 M56.86,48.249c-0.465,2.321-1.097,4.57-1.92,6.702c-2.309,1.051-4.783,1.879-7.36,2.49C51.018,54.852,54.171,51.726,56.86,48.249z
+			 M64.943,22.241c-0.919-0.87-1.938-1.705-3.068-2.491c-0.432-0.289-0.871-0.579-1.32-0.862c1.77,1.379,3.283,2.916,4.533,4.559
+			c0.194,2.172,0.077,4.501-0.396,6.96c-0.3,1.557-0.737,3.109-1.287,4.646c-1.044-2.929-2.506-5.825-4.305-8.599
+			c-0.586-3.425-1.521-6.746-2.822-9.839c1.507,0.652,2.963,1.375,4.319,2.216c-0.393-0.311-0.815-0.622-1.239-0.916
+			c-1.051-0.73-2.186-1.381-3.355-1.995c-0.868-1.961-1.884-3.822-3.051-5.546c-1.025-1.514-2.128-2.851-3.282-4.03
+			C57.687,8.002,63.711,13.846,64.943,22.241z M42.624,5.864c-0.312,0.064-0.622,0.123-0.931,0.195
+			c0.361-0.044,0.719-0.076,1.076-0.105c2.759,1.758,5.361,4.294,7.646,7.603c-1.734-0.578-3.526-1.072-5.376-1.44
+			c-2.664-1.812-5.478-3.338-8.368-4.504C38.324,6.935,40,6.383,41.688,5.987c-0.506,0.063-1.016,0.135-1.531,0.227
+			c-1.42,0.255-2.847,0.623-4.267,1.089c-1.925-0.729-3.88-1.298-5.846-1.676c-1.707-0.329-3.349-0.496-4.926-0.527
+			C30.663,2.038,36.963,2.32,42.624,5.864z M19.213,9.812c-0.24,0.354-0.474,0.709-0.702,1.07c0.305-0.391,0.617-0.764,0.934-1.125
+			c3.222-0.761,6.9-0.84,10.911-0.124c-1.326,0.681-2.633,1.443-3.915,2.276c-3.462,0.593-6.82,1.541-9.942,2.864
+			c0.616-1.343,1.294-2.621,2.034-3.815c-0.316,0.402-0.621,0.811-0.918,1.241c-0.622,0.894-1.187,1.839-1.719,2.812
+			c-1.954,0.866-3.807,1.88-5.525,3.043c-1.283,0.869-2.444,1.79-3.487,2.754C8.764,15.236,13.162,11.312,19.213,9.812z M5.71,28.616
+			c0.01,0.059,0.016,0.116,0.027,0.175c0.098,0.516,0.204,1.031,0.323,1.544c-0.084-0.688-0.132-1.361-0.161-2.025
+			c1.74-2.758,4.257-5.361,7.542-7.649c-0.599,1.769-1.089,3.602-1.452,5.487c-1.835,2.724-3.372,5.603-4.528,8.557
+			c-0.546-1.449-0.996-2.896-1.332-4.327c0.057,0.5,0.139,1.009,0.226,1.515c0.21,1.167,0.501,2.332,0.853,3.489
+			c-0.68,1.836-1.217,3.7-1.578,5.572c-0.33,1.711-0.496,3.355-0.527,4.935C2.076,40.422,2.307,34.217,5.71,28.616z M9.811,51.79
+			c0.355,0.236,0.709,0.472,1.076,0.696c-0.394-0.307-0.769-0.621-1.133-0.939C9.03,48.469,8.928,44.974,9.548,41.17
+			c0.815,1.608,1.746,3.187,2.791,4.715c0.684,3.067,1.654,6.048,2.93,8.838c-1.524-0.673-2.972-1.421-4.311-2.251
+			c0.4,0.309,0.811,0.621,1.24,0.915c1.075,0.747,2.23,1.405,3.417,2.022c0.803,1.672,1.696,3.285,2.715,4.792
+			c1.066,1.576,2.208,2.973,3.401,4.206C15.667,62.719,11.391,58.174,9.811,51.79z M24.427,65.691
+			c1.408-0.019,2.865-0.154,4.366-0.424c0.516-0.103,1.025-0.2,1.538-0.327c-2.548,0.314-4.928,0.232-7.109-0.188
+			c-1.652-1.39-3.197-3.101-4.585-5.15c-0.801-1.185-1.521-2.444-2.167-3.763c2.808,1.359,5.869,2.375,9.084,3.04
+			c2.868,1.913,5.917,3.512,9.062,4.698c-1.421,0.532-2.84,0.97-4.243,1.3c0.495-0.062,1.011-0.141,1.526-0.231
+			c1.136-0.204,2.269-0.485,3.396-0.823c1.813,0.647,3.652,1.165,5.503,1.522c1.951,0.375,3.823,0.558,5.606,0.571
+			C39.607,70.447,31.244,70.641,24.427,65.691z M48.765,64.945c0.869-0.919,1.702-1.937,2.487-3.065
+			c0.299-0.429,0.58-0.874,0.859-1.31c-1.377,1.763-2.909,3.271-4.548,4.519c-2.175,0.196-4.506,0.08-6.968-0.394
+			c-1.452-0.279-2.899-0.675-4.335-1.173c3.314-1.105,6.559-2.764,9.614-4.851c3.029-0.675,5.972-1.633,8.732-2.884
+			c-0.7,1.689-1.506,3.308-2.439,4.814c0.32-0.4,0.622-0.814,0.924-1.247c0.854-1.227,1.603-2.564,2.296-3.951
+			c1.681-0.807,3.303-1.703,4.816-2.729c1.744-1.181,3.276-2.451,4.601-3.785C63.378,57.292,57.432,63.67,48.765,64.945z"/>
+		</svg>
+		<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-187077-3']);
+		_gaq.push(['_setDomainName', 'ideabile.com']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		window.onerror = function(message, file, line) {
+			_gaq.push(['_trackEvent', 'JS Error', file + ':' + line + '\n\n' + message]);
+		};
+		</script>
+	</body>
+</html>

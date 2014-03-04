@@ -1,0 +1,331 @@
+* {margin: 0; padding: 0;}
+
+body {
+	margin: 0;
+	font-family: Lucida, Helvetica, Arial, sans-serif;
+	text-align: center;
+	background: #000;
+	color: #555;
+	/*background: url("../images/sf-b.png");*/
+	/*background-color: #d8d8d8;*/
+}
+a {
+	color: #FFF;
+}
+a:hover {
+	color: #CCC;
+}
+
+/*
+ * Svg Elements
+ */
+#background, #myCanvas{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#crown{
+	width: 0;
+	height: 0;
+}
+
+#ideabile{
+	display: none;
+}
+/*
+ * Nav
+ */
+.nav a {
+	margin: 0 10px;
+	font-size: 16px;
+	font-variant: small-caps;
+	text-decoration: none;
+	letter-spacing: 5px;
+}
+
+.nav {
+	background: #000;
+	padding: 10px;
+	display: none;
+	z-index: 333;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.nav.active{
+	display: block;
+}
+
+
+/*
+ * All and panels
+ */
+#all {
+	display: table;
+	z-index: 2;
+	/* margin: 0 auto; */
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	padding-top: 30px;
+	/* text-align: center; */
+}
+
+#all .panel {
+	z-index: 3;
+	font-size: 18px;
+	color: #FFF;
+	padding: 20px;
+	display: none;
+	vertical-align: middle;
+	/*background-color: rgba(0,0,0,0.8);*/
+	margin: 0 auto;
+	text-align: center;
+	/* height: 100%; */
+	/* width: 100%; */
+}
+
+#all .panel.active{
+	display: table-cell;
+}
+
+#all .panel#timeLine{
+	width: 800px;
+	overflow: hidden;
+	background: none;
+	text-align: center;
+}
+
+#all .panel > div.space{
+	margin: 0 auto;
+	width: 800px;
+}
+
+
+/*
+ * Panel and Experiences title
+ */
+.experencies > li > h2, .panel h2{
+	margin-bottom: 20px;
+	font-variant: small-caps;
+	letter-spacing: 0.9em;
+}
+
+.panel .space > h2{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #FFF;
+}
+
+.experencies .description h2{
+	font-size: 1.2em;
+	letter-spacing: 0.4em;
+}
+
+
+/*
+ * Experiences
+ */
+.experencies{
+	list-style: none;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.experencies > li{
+	list-style: none;
+	position: relative;
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+	padding: 20px;
+}
+.experencies > li.active{
+	display: block;
+}
+
+/*
+ * Experiences nav
+ */
+.experencies-nav{
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.experencies-nav a {
+	padding: 10px;
+	margin: 0;
+	margin-top: 25%;
+	text-decoration: none;
+	background: #FFF;
+	color: #000;
+	transition: all ease-in 90ms;
+}
+.experencies-nav a.prev {
+	float: left;
+}
+.experencies-nav a.next {
+	float: right;
+}
+
+.experencies-nav .next:hover {
+	padding-right: 40px;
+}
+
+.experencies-nav .prev:hover {
+	padding-left: 40px;
+}
+
+/*
+ * Experiences url
+ */
+.experencies > li .url{
+	display: none;
+}
+
+/*
+ * Experiences company
+ */
+.experencies > li div.company{
+	display: none;
+}
+/*
+ * Experiences year
+ */
+.experencies > li div.year{
+	border-bottom: 1px solid #FFF;
+	line-height: 0px;
+	background: #000;
+}
+.experencies > li div.year span{
+	background: #000;
+	padding: 0px 16px;
+	margin-bottom: -8px;
+}
+
+/*
+ * Experiences description
+ */
+.experencies > li div.description{
+	text-align: left;
+	float: right;
+	width: 50%;
+	margin-top: 20px;
+	font-size: 0.84em;
+}
+
+.experencies > li div.description > ul{
+	margin: 30px;
+	list-style-type: decimal-leading-zero;
+}
+
+.experencies > li div.description > ul > li{
+	padding-left: 10px;
+	margin-bottom: 20px;
+	color: #555;
+	transition: all ease-in 1s;
+}
+.experencies > li div.description > ul > li:hover{
+	color: #FFF;
+}
+
+/*
+ * Experiences Charts
+ */
+.experencies > li div.charts{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.experencies > li div.spacer {
+	margin: 0 auto;
+	width: 80%;
+	margin-top: 7%;
+}
+
+.experencies > li div.charts div.pie-chart{
+	float: left;
+	text-align: center;
+	position: relative;
+	width: 200px;
+	height: 160px;
+}
+
+.pie-chart div.labels > div.selected > span.value {
+	clear: both;
+	display: block;
+	font-size: 24px;
+}
+
+.pie-chart div.labels{
+	display: table;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	width: 200px;
+	height: 160px;
+}
+
+.pie-chart div.chart {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pie-chart div.labels div.selected{
+	display: none !important;
+}
+
+.pie-chart div.labels span.default, .pie-chart div.labels div.selected{
+	font-size: 14px;
+	display: table-cell;
+	vertical-align: middle !important;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	padding: 20px 30px;
+}
+
+.pie-chart div.labels.active div.selected{
+	display: table-cell !important;
+}
+.pie-chart div.labels.active .default{
+	display: none !important;
+}
+
+.experencies > li.active{
+	display: block;
+}
+
+
+/*
+ * Main Nav
+ */
+#main > div {
+	width: 300px;
+	border-radius: 500px;
+	border-color: #000;
+	box-shadow: #000 0 0 10px;
+	background-color: rgba(0,0,0,0.8);
+	margin: 0 auto;
+}
+
+#main > div > p {
+	color: #555;
+	margin: 8px 0 0 0;
+	padding: 0
+	transition: all ease-in 1s;
+}
+
+#main > div > p {
+	color #FFF;
+}
