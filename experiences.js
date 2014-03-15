@@ -1509,85 +1509,11 @@ define([],function(){
 					related : {
 					}
 				}
-			],
+			]
 
 
-			status: "dismissed",
 		},
 
-		{
-
-
-			year: "2010",
-
-			title: "Website for Teknoweb s.r.l.",
-
-
-			description: "Website creation for the communication company archita.",
-
-			url: "http://www.awtp.it/",
-
-
-			company: "archita",
-
-			details: [
-
-
-				{
-					name: "HTML",
-					hours: 9,
-					category: "programming_languages"
-				},
-				{
-					name: "JS",
-					hours: 5,
-					category: "programming_languages"
-				},
-				{
-					name: "PHP",
-					hours: 10,
-					category: "programming_languages"
-				},
-				{
-					name: "SQL",
-					hours: 8,
-					category: "programming_languages"
-				},
-				{
-					name: "CSS",
-					hours: 5,
-					category: "programming_languages"
-				},
-
-
-				{
-					name: "Smarty Template Engine",
-					hours: 8,
-					category: "software",
-					related : {
-						programming_languages : "PHP"
-					}
-				},
-				{
-					name: "MySQL",
-					hours: 5,
-					category: "software",
-					related : {
-						programming_languages : "SQL"
-					}
-				},
-				{
-					name: "Apache",
-					hours: 7,
-					category: "software",
-					related : {
-					}
-				}
-			],
-
-
-			status: "dismissed",
-		},
 
 		{
 
