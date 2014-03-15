@@ -397,7 +397,7 @@ define(["paper"], function(paper){
 			item.remove();
 		},
 
-		destroy: function(cb){
+		destroy: function(cb, attributes){
 			background.tool = null;
 			background.actStep = 4;
 			setTimeout(function(){
@@ -419,7 +419,7 @@ define(["paper"], function(paper){
 				}
 
 				if(typeof cb != "undefined"){
-					cb();
+					cb(attributes);
 				}
 
 			}, 3000);

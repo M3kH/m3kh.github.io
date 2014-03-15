@@ -343,7 +343,7 @@ define(["paper"], function(paper){
 			item.remove();
 		},
 
-		destroy: function(cb){
+		destroy: function(cb, attributes){
 			// background.obj.crown.remove();
 			background.tool = null;
 			background.actStep = 5;
@@ -361,7 +361,7 @@ define(["paper"], function(paper){
 				paper.view.onFrame = null;
 
 				if(typeof cb != "undefined"){
-					cb();
+					cb(attributes);
 				}
 
 			}, 3000);

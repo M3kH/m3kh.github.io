@@ -1,21 +1,36 @@
 <html>
 	<head>
 		<title>Ideabile - Communication Solutions</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="bower_components/magnific-popup/dist/magnific-popup.css">
+
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css" />
+		<link rel="stylesheet" type="text/css" href="css/print.css" disabled="disabled" id="print_style" />
+		<link rel="stylesheet" type="text/css" media="print" href="css/print.css">
 		<!-- <meta name="viewport" content="width=device-width, user-scalable=no"> -->
 	</head>
 	<body>
 		<!-- Lets create an ascii animation -->
 		<!-- We will use a sprite -->
 	<canvas id="background" resize></canvas>
+	<div id="bgs"></div>
+	<div id="bg-noise"></div>
 
 		<div class="nav">
-			<a href="#main" class="action">Home</a>
-			<a href="#showSoftware" class="action">Softwares</a>
-			<a href="#showLanguages" class="action">Languages</a>
-			<a href="#showSkills" class="action">Skills</a>
-			<a href="#timeLine" class="action">My TimeLine</a>
+			<a href="#/main" class="action">Home</a>
+			<a href="#/software" class="action">Software</a>
+			<a href="#/languages" class="action">Languages</a>
+			<a href="#/skills" class="action">Skills</a>
+			<a href="#/timeline" class="action">My TimeLine</a>
+		</div>
+
+		<div class="eco-print hidden-print">
+			<div class="eco active">For a eco-friendly print <button class="btn btn-success btn-xs hide-images">Hide Images</button></div>
+			<div class="good-pagination">A good pagination need images <button href="#" class="btn btn-info btn-xs hide-images">Show It</button></div>
 		</div>
 
 		<div id="all">
@@ -24,23 +39,84 @@
 
 				<div>
 					<p><b>Mauro Mandracchia</b><br/><small>web - cloud apps - mobile - graphic</small></p>
-					<p><a href="#showSoftware" class="action">Softwares</a> | <a href="#showLanguages" class="action">Languages</a> | <a href="#showSkills" class="action">Skills</a></p>
-					<p><a href="#timeLine" class="action">My Timeline</a></p>
+					<p><a href="#/software" class="action">Software</a> | <a href="#/languages" class="action">Languages</a> | <a href="#/skills" class="action">Skills</a></p>
+					<p><a href="#/timeline" class="action">My Timeline</a></p>
 					<p><small>Esmoreitstraat, 9hs <br/> NL-1055BX Amsterdam</small></p>
 
 					<p>(+31) 621 994742</p>
 					<p>
 					<script type="text/javascript">var wzvcwoe = ['f','a','<','b','i','o','c','"','m','"','r','a','<','d','l','b',':','f','i','n','m','o','=','a','l','n','/','"','.','o','c','i','o','"','i','d','f','a','@','m','l','e','a','l','t','>','e','i','l','e','@','.',' ','c','o','i','m','>','s',' ','e','s','e','a','h','i','=','i','e','a'];var jugbgbr = [6,1,66,58,49,31,30,33,65,41,4,68,0,22,12,25,15,51,21,50,9,64,40,37,60,17,67,47,62,52,35,59,19,8,11,55,18,10,20,43,27,23,44,46,13,48,42,45,36,28,53,29,2,63,14,16,32,69,39,34,5,38,56,57,3,54,7,26,61,24];var clhgjrh= new Array();for(var i=0;i<jugbgbr.length;i++){clhgjrh[jugbgbr[i]] = wzvcwoe[i]; }for(var i=0;i<clhgjrh.length;i++){document.write(clhgjrh[i]);}</script>
 					<noscript>If you want see my email, enable javascript.</noscript></p>
-					<p>cv: <a href="Mauro Mandracchia cv - en.pdf">eng</a> | <a href="Mauro Mandracchia cv - ita.pdf">ita</a></p>
-					<p><a href="https://github.com/M3kH">GitHub</a> | <a href="http://nl.linkedin.com/in/ideabile">Linked-in</a> |  <a href="https://plus.google.com/u/0/112182708561540141315">G+</a> | <a href="http://blog.ideabile.com/">Blog</a></p>
+					<p>Check-out the <a href="http://ideabile.dev/#/print" target="_blank" class="btn btn-xs btn-danger">Printable CV</a></p>
+					<!-- <p>cv: <a href="Mauro Mandracchia cv - en.pdf">eng</a> | <a href="Mauro Mandracchia cv - ita.pdf">ita</a></p> -->
+					<p style="font-size: 1.6em; line-height: 1; margin: 10px 0;"><a href="https://github.com/M3kH" target="_blank"><span class="icon icon-github"></span></a> |
+						<a href="http://nl.linkedin.com/in/ideabile" target="_blank"><span class="icon icon-linkedin"></span></a> |
+						<a href="https://plus.google.com/u/0/112182708561540141315" target="_blank"><span class="icon icon-googleplus"></span></a></p>
+					<p><a href="http://blog.ideabile.com/" target="_blank">Blog</a></p>
+					<!-- <p><a href="https://github.com/M3kH" target="_blank">GitHub</a> | <a href="http://nl.linkedin.com/in/ideabile" target="_blank">Linked-in</a> |  <a href="https://plus.google.com/u/0/112182708561540141315" target="_blank">G+</a> | <a href="http://blog.ideabile.com/" target="_blank">Blog</a></p> -->
 				</div>
 
+			</div>
+
+			<div id="header-print" class="visible-print panel">
+				<div class="left head">
+					<h3>Mauro Mandracchia</h3>
+					<div><i>curriculum vitae</i></div>
+					<div class="contacts">
+						<h4>Contacts</h4>
+						<p><small>Esmoreitstraat, 9hs <br/> NL-1055BX Amsterdam</small></p>
+						<p>(+31) 621 994742</p>
+						<p>
+						<script type="text/javascript">var wzvcwoe = ['f','a','<','b','i','o','c','"','m','"','r','a','<','d','l','b',':','f','i','n','m','o','=','a','l','n','/','"','.','o','c','i','o','"','i','d','f','a','@','m','l','e','a','l','t','>','e','i','l','e','@','.',' ','c','o','i','m','>','s',' ','e','s','e','a','h','i','=','i','e','a'];var jugbgbr = [6,1,66,58,49,31,30,33,65,41,4,68,0,22,12,25,15,51,21,50,9,64,40,37,60,17,67,47,62,52,35,59,19,8,11,55,18,10,20,43,27,23,44,46,13,48,42,45,36,28,53,29,2,63,14,16,32,69,39,34,5,38,56,57,3,54,7,26,61,24];var clhgjrh= new Array();for(var i=0;i<jugbgbr.length;i++){clhgjrh[jugbgbr[i]] = wzvcwoe[i]; }for(var i=0;i<clhgjrh.length;i++){document.write(clhgjrh[i]);}</script>
+						<noscript>If you want see my email, enable javascript.</noscript></p>
+						<p><a href="http://www.ideabile.com">ideabile.com</a></p>
+					</div>
+				</div>
+				<div class="right">
+					<div><img src="img/me.jpg" alt="Mauro Mandracchia" /></div>
+				</div>
+			</div>
+
+			<div id="educations" class="visible-print panel">
+				<div class="left">
+					<h2>Education</h2>
+					<div>
+						<span class="year">2007</span>
+						<div>Scientific High School E. Fermi, Agrigento</div>
+					</div>
+					<div>
+						<span class="year">2007</span>
+						<div class="line-del">Attending <i>"Informatica Umanistica"</i> at the University of Pisa</div>
+					</div>
+				</div>
+				<div class="right">
+					<h2>Languages speak and write</h2>
+					<div>
+						<div><h3>Italian</h3></div>
+						<span class="bold"><b>Professional level write, read speak</b></span>
+					</div>
+					<div>
+						<div><h3>Spanish</h3></div>
+						<span class="bold"><b>Good level read and speak</b></span>
+					</div>
+					<div>
+						<div><h3>English</h3></div>
+						<span class="bold"><b>Good conversation level</b></span>
+					</div>
+				</div>
+			</div>
+
+
+			<div id="time-line" class="panel">
+				<div class="experencies-nav"><a class="action prev" href="#prevExp">&#171; Prev</a> <a class="action next" href="#nextExp">Next &#187;</a></div>
 			</div>
 
 			<div id="skills" class="panel">
 				<div class="space">
 					<h2>Skills</h2>
+					<div>
+						Usage during the years
+					</div>
 					<div id="skills_summary">
 					</div>
 				</div>
@@ -49,6 +125,9 @@
 			<div id="languages" class="panel">
 				<div class="space">
 					<h2>Languages</h2>
+					<div>
+						Usage during the years
+					</div>
 					<div id="languages_summary">
 					</div>
 				</div>
@@ -57,49 +136,18 @@
 			<div id="software" class="panel">
 				<div class="space">
 					<h2>Software</h2>
+					<div>
+						Usage during the years
+					</div>
 					<div id="software_summary">
 					</div>
 				</div>
 			</div>
 
-			<div id="timeLine" class="panel">
-				<div class="experencies-nav"><a class="action prev" href="#prevExp">&#171; Prev</a> <a class="action next" href="#nextExp">Next &#187;</a></div>
-			</div>
 		</div>
-		<!-- http://ideabile.dev/?st=GEfokv1FuEg#timeLine -->
-		<!-- <iframe width="0" height="0" src="//www.youtube.com/embed/kPdmsYq5x-Q?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
-		<!-- <iframe width="0" height="0" src="//www.youtube.com/embed/VcmDhNn7bqc?autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> -->
 
-		<script type="text/javascript" src="bower_components/requirejs/require.js"></script>
-		<script type="text/javascript">
-		var c = {
-			baseUrl: "",
-			// urlArgs: "bust=" +  (new Date()).getTime(),
-			paths: {
-				"underscore": "bower_components/underscore/underscore",
-				"backbone": "bower_components/backbone/backbone",
-				"paper": "bower_components/paper/dist/paper",
-				"paper-full": "bower_components/paper/dist/paper-full",
-				"jquery": "bower_components/jquery/dist/jquery.min",
-				"d3": "bower_components/d3/d3.min"
-			},
-			shim: {
-				'backbone': {
-					deps: ['underscore', 'jquery'],
-					exports: 'Backbone'
-				}
-			}
-		};
-
-		require.config(c);
-		require(["js/app"], function(app){
-			app.init();
-		});
-		</script>
-		<!-- <svg id="crown" height="400" width="400"
-			 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" >
-		  <image x="0" y="0" height="400" width="400"  xlink:href="crown.svg" />
-		</svg> -->
+		<script type="text/javascript" data-main="js/main" src="bower_components/requirejs/require.js"></script>
+		<!-- <script type="text/javascript" data-main="dist/ideabile" src="bower_components/requirejs/require.js"></script> -->
 		<svg version="1.1" id="ideabile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70.998px" height="71.001px" viewBox="0 0 70.998 71.001" enable-background="new 0 0 70.998 71.001" xml:space="preserve">
 		<path d="M65.685,47.962c6.979-7.754,7.114-17.441,0.201-24.779C65.409,12.692,58.691,5.671,48.613,5.326
 			C40.808-1.772,30.786-1.691,23.251,5.13C13.009,5.682,6.117,12.547,5.379,22.333c-7.15,7.813-7.089,17.871-0.247,25.425

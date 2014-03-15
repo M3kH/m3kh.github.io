@@ -107,6 +107,7 @@ define(['jquery', 'd3'], function($, d3){
 			//]
 
 			var data = render.getGlobalCategory(category);
+			// console.log(data);
 
 			function truncate(str, maxLength, suffix) {
 				if(str.length > maxLength) {
@@ -738,7 +739,7 @@ define(['jquery', 'd3'], function($, d3){
 			render.elem.find( ".experencies > li" ).removeClass("active");
 		},
 
-		showElem: function( elem){
+		showElem: function( elem ){
 
 			// Apply the animation effect to the element
 			elem.addClass("active animated bounceInUp");

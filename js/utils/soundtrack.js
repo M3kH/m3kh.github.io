@@ -1,7 +1,7 @@
 define(["jquery"], function($){
 	var st = {
 		urlParam : function(key){
-			var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.search);
+			var result = new RegExp(key + "=([^&]*)", "i").exec(window.location.hash);
 			return result && unescape(result[1]) || false;
 		},
 		appendSound: function(song){

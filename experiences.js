@@ -6,7 +6,7 @@ define([],function(){
 
 			title: "My CV Update",
 
-			description: "I spend almost a week, for build this website. I made with love and JS, thanks to power of the last HTML standard I get the possibility to draw my decorations just in my code, without use raster images.<br/><br/> You can find this website on <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>",
+			description: "I spent almost a week building this website. I made it with love and JS. Thanks to the last HTML standard I got the possibility to draw my decorations just with lines of code, without using raster images.<br/><br/> You can find this website on <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>, here a list of JS libraries I used for build up <ul><li><a href=\"http://www.backbonejs.org\" target=\"_blank\">Backbone.js</a></li><li><a href=\"http://www.http://paperjs.org/\" target=\"_blank\">Paper.js</a></li><li><a href=\"http://www.d3js.org/\" target=\"_blank\">D3.js</a></li></ul>",
 
 			company: "me",
 
@@ -15,11 +15,6 @@ define([],function(){
 				{
 					name: "HTML",
 					hours: 5,
-					category: "programming_languages"
-				},
-				{
-					name: "JSON",
-					hours: 10,
 					category: "programming_languages"
 				},
 				{
@@ -34,6 +29,30 @@ define([],function(){
 				},
 
 				{
+					name: "Phantom.js",
+					hours: 3,
+					category: "software"
+				},
+
+				{
+					name: "Node.js",
+					hours: 12,
+					category: "software"
+				},
+
+				{
+					name: "Grunt.js",
+					hours: 12,
+					category: "software"
+				},
+
+				{
+					name: "Backbone.js",
+					hours: 12,
+					category: "software"
+				},
+
+				{
 					name: "D3.js",
 					hours: 6,
 					category: "software"
@@ -42,6 +61,30 @@ define([],function(){
 					name: "Paper.js",
 					hours: 6,
 					category: "software"
+				},
+
+
+				{
+					name: "JSON Schemes",
+					hours: 10,
+					category: "skill"
+				},
+				{
+					name: "Graphic",
+					hours: 10,
+					category: "skill"
+				},
+				{
+					name: "Data visualization",
+					hours: 10,
+					category: "skill"
+				},
+			],
+
+			images: [
+				{
+					url: "me/ispirations.jpg",
+					name: "MailExpress Interface"
 				}
 			]
 		},
@@ -51,7 +94,7 @@ define([],function(){
 
 			title: "Open Source projects",
 
-			description: "I like share, even if it not everytime easy; but I just don't want keep for me my swish-kniff tool. So I build up some repositories with different projects:<ul><li><h2>Tire-Bouchon</h2>A PHP bootstrap framework with ORM integration and JS and View strategies. <br/><br/><a href='https://github.com/M3kH/tire-bouchon' target='_blank'>GitHub</a></li><li><h2>Socks Logger</h2>A node.js runtime server, for manage logs in your application like dirty socks. <br/><br/><a href='https://github.com/M3kH/socks-logger' target='_blank'>GitHub</a></li><li><h2>PHP Socks</h2>A PHP integration for the <b>Socks Logger</b>. <br/><br/><a href='https://github.com/M3kH/PHP-Socks' target='_blank'>GitHub</a></li></ul>",
+			description: "I like to share even if it is not always easy. I don't just want to keep my swish-kniff tool for myself, so I build up some repositories with different projects:<ul><li><h2>Tire-Bouchon</h2>A PHP bootstrap framework with ORM integration and JS and View strategies. <br/><br/><a href='https://github.com/M3kH/tire-bouchon' target='_blank'>GitHub</a></li><li><h2>Socks Logger</h2>A node.js runtime server, for manage logs in your application like dirty socks. <br/><br/><a href='https://github.com/M3kH/socks-logger' target='_blank'>GitHub</a></li><li><h2>PHP Socks</h2>A PHP integration for the <b>Socks Logger</b>. <br/><br/><a href='https://github.com/M3kH/PHP-Socks' target='_blank'>GitHub</a></li></ul>",
 
 			company: "me",
 
@@ -60,11 +103,6 @@ define([],function(){
 				{
 					name: "HTML",
 					hours: 5,
-					category: "programming_languages"
-				},
-				{
-					name: "JSON",
-					hours: 10,
 					category: "programming_languages"
 				},
 				{
@@ -79,14 +117,45 @@ define([],function(){
 				},
 
 				{
-					name: "D3.js",
+					name: "Backbone.js",
 					hours: 6,
 					category: "software"
 				},
 				{
-					name: "Paper.js",
+					name: "MySql",
 					hours: 6,
 					category: "software"
+				},
+				{
+					name: "Epiphany PHP",
+					hours: 6,
+					category: "software"
+				},
+				{
+					name: "dNode",
+					hours: 6,
+					category: "software"
+				},
+				{
+					name: "Socket.io",
+					hours: 6,
+					category: "software"
+				},
+				{
+					name: "React.js",
+					hours: 6,
+					category: "software"
+				},
+
+				{
+					name: "PHP ReadBean",
+					hours: 10,
+					category: "skill"
+				},
+				{
+					name: "Node.js",
+					hours: 20,
+					category: "skill"
 				}
 			]
 		},
@@ -105,9 +174,6 @@ define([],function(){
 			company: "directness",
 
 			details: [
-
-
-
 
 				{
 					name: "English",
@@ -156,11 +222,6 @@ define([],function(){
 					hours: 3,
 					category: "programming_languages"
 				},
-				{
-					name: "JSON",
-					hours: 10,
-					category: "programming_languages"
-				},
 
 
 				{
@@ -168,7 +229,7 @@ define([],function(){
 					hours: 6,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -176,7 +237,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -219,6 +280,11 @@ define([],function(){
 				},
 
 
+				{
+					name: "Json Schemes",
+					hours: 10,
+					category: "skill"
+				},
 				{
 					name: "Creativity",
 					hours: 6,
@@ -282,10 +348,24 @@ define([],function(){
 
 			images: [
 				{
-					url: "images/whaterverfile.jpg",
-					name: "Landing page",
-					link: "",
-					desc: ""
+					url: "directness/01.jpg",
+					name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/02.jpg",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/03.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/04.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/05.png",
+					// name: "MailExpress Interface"
 				}
 			]
 		},
@@ -298,7 +378,7 @@ define([],function(){
 			title: "Graphic Designer and Businnes Assistant at Impronte Digitali",
 
 
-			description: "Project Design and Excetued of comunication for Advertisign and Decorations, with printing and digital tecnologies.<br/> I was respossible to understand the customer needs, and find a graphic and realizable solution.<br/> I was encharged to follow the customer from his needs till sketch till and printing the final product, and when was possible help in the application.",
+			description: "Project Design and Excetued of communication for Advertising and Decorations, with printing and digital tecnologies.<br/> I was respossible to understand the customer needs, and find a graphic and realizable solution.<br/> I was encharged to follow the customer from his needs till sketch till and printing the final product, and when was possible help in the application.",
 
 
 			company: "improntedigitali",
@@ -347,7 +427,7 @@ define([],function(){
 					hours: 6,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -355,7 +435,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -363,7 +443,7 @@ define([],function(){
 					hours: 9,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -371,7 +451,7 @@ define([],function(){
 					hours: 8,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -405,7 +485,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 9,
 					category: "skill"
 				},
@@ -462,10 +542,12 @@ define([],function(){
 
 			images: [
 				{
-					url: "images/whaterverfile.jpg",
-					name: "Landing page",
-					link: "",
-					desc: ""
+					url: "impronte/01.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/02.png",
+					name: "Landing page"
 				}
 			]
 		},
@@ -478,7 +560,7 @@ define([],function(){
 			title: "Software Developer and Customer Assistant at Centro Italiano D'Ergonomia",
 
 
-			description: "In the begining I join in the company for make a Software for Task and Bills Management, but in the year we choose other strategies for business needs; so I was encarged to cover uncovered roles and try to add my programming tecniques to the role. From the assistance of the customer till the comunication strategies and products. In this year I produce: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
+			description: "In the beginning  I join in the company for make a Software for Task and Bills Management, but in the year we choose other strategies for business needs; so I was encharged to cover uncovered roles and try to add my programming Techniques to the role. From the assistance of the customer till the communication strategies and products. In this year I Produced: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
 
 
 			company: "cie",
@@ -520,7 +602,7 @@ define([],function(){
 					hours: 8,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -531,7 +613,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 4,
 					category: "skill"
 				},
@@ -568,6 +650,169 @@ define([],function(){
 			status: "dismissed"
 		},
 
+		{
+
+
+			year: "2010",
+
+			title: "Web Portal, for Ordine Ingegneri delle Provincia di Pistoia",
+
+
+			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after win the public competitions for the best quality and technical offer. We go in deep in their need and try to cover all of them in the website.<br/> We use a base of WordPress and we customize a lot for get a CMS style. Inside there is a lot of features build has “plugin” for <b>WP</b>, some of them: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user witch would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to add decide witch information show, and even add additional once like: Picture Profile, Personal CV and tag him-self to a keywords of their job.</li></ul>",
+
+
+			company: "archita",
+
+			details: [
+
+
+				{
+					name: "HTML",
+					hours: 9,
+					category: "programming_languages"
+				},
+				{
+					name: "JS",
+					hours: 5,
+					category: "programming_languages"
+				},
+				{
+					name: "PHP",
+					hours: 10,
+					category: "programming_languages"
+				},
+				{
+					name: "SQL",
+					hours: 8,
+					category: "programming_languages"
+				},
+				{
+					name: "CSS",
+					hours: 5,
+					category: "programming_languages"
+				},
+
+
+				{
+					name: "WordPress",
+					hours: 20,
+					category: "software",
+					related : {
+						programming_languages : "PHP"
+					}
+				},
+				{
+					name: "MySQL",
+					hours: 5,
+					category: "software",
+					related : {
+						programming_languages : "SQL"
+					}
+				},
+				{
+					name: "Apache",
+					hours: 7,
+					category: "software",
+					related : {
+					}
+				}
+			],
+
+			images:[
+				{
+					url: "archita/odi/01.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/odi/02.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/odi/03.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/odi/04.png",
+					name: "Landing page"
+				}
+			]
+
+
+		},
+
+
+		{
+
+
+			year: "2010",
+
+			title: "EuroPackaging Italia Website",
+
+			description: "Website creation EuroPackaging, an Italian company of packaging products.",
+
+			url: "http://www.europackaging.it",
+
+			company: "archita",
+
+			details: [
+
+
+
+
+				{
+					name: "HTML",
+					hours: 9,
+					category: "programming_languages"
+				},
+				{
+					name: "JS",
+					hours: 5,
+					category: "programming_languages"
+				},
+				{
+					name: "PHP",
+					hours: 10,
+					category: "programming_languages"
+				},
+				{
+					name: "SQL",
+					hours: 8,
+					category: "programming_languages"
+				},
+				{
+					name: "CSS",
+					hours: 5,
+					category: "programming_languages"
+				},
+
+
+				{
+					name: "Smarty Template Engine",
+					hours: 8,
+					category: "software",
+					related : {
+						programming_languages : "PHP"
+					}
+				},
+				{
+					name: "MySQL",
+					hours: 5,
+					category: "software",
+					related : {
+						programming_languages : "SQL"
+					}
+				},
+				{
+					name: "Apache",
+					hours: 7,
+					category: "software",
+					related : {
+					}
+				}
+			],
+
+		},
+
 
 		{
 
@@ -577,7 +822,7 @@ define([],function(){
 			title: "Set of graphic icons for the industry SCA, at archita company.",
 
 
-			description: "Symple set of icons for B2B communications in the paper industry world.",
+			description: "Simple set of icons for B2B communications in the paper industry world.",
 
 
 			company: "archita",
@@ -592,7 +837,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -608,7 +853,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 9,
 					category: "skill"
 				}
@@ -626,7 +871,7 @@ define([],function(){
 			title: "Stock photos for products of industry SCA",
 
 
-			description: "Stock photos of finall products, clean and cutted, for advertising materials.",
+			description: "Stock photos of final products, clean and cutted, for advertising materials.",
 
 
 			company: "archita",
@@ -651,7 +896,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1278,7 +1523,7 @@ define([],function(){
 			title: "Website for Teknoweb s.r.l.",
 
 
-			description: "Website creation for the comunication company archita.",
+			description: "Website creation for the communication company archita.",
 
 			url: "http://www.awtp.it/",
 
@@ -1426,7 +1671,7 @@ define([],function(){
 			title: "Wesite and CMS creation DixitPress.",
 
 
-			description: "Wesite creation DixitPress and CMS system for manaage the online publication of media.",
+			description: "Wesite creation DixitPress and CMS system for manage the online publication of media.",
 
 			url: "http://www.dixitpress.it/",
 
@@ -1524,7 +1769,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1650,7 +1895,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1692,7 +1937,7 @@ define([],function(){
 					hours: 6,
 					category: "tools",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 				{
@@ -1700,7 +1945,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1711,7 +1956,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 10,
 					category: "skill"
 				}
@@ -1754,7 +1999,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1775,7 +2020,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 10,
 					category: "skill"
 				}
@@ -1815,7 +2060,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1826,7 +2071,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 10,
 					category: "skill"
 				}
@@ -1866,7 +2111,7 @@ define([],function(){
 					hours: 7,
 					category: "software",
 					related : {
-						skill : ["graphic", "creativity"]
+						skill : ["graphic-design", "creativity"]
 					}
 				},
 
@@ -1877,7 +2122,7 @@ define([],function(){
 					category: "skill"
 				},
 				{
-					name: "Graphic",
+					name: "Graphic Design",
 					hours: 10,
 					category: "skill"
 				}
