@@ -440,7 +440,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 			render_gallery : function(images){
-				var base_url = "img/works/",
+				var base_url = "http://www.ideabile.com/img/works/",
 					tmpl = "";
 
 					tmpl += "<% _.each(images, function(image,i){ %>";
