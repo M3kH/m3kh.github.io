@@ -49,7 +49,7 @@ define([
 							effects.fade_in_border( this.bg.scene.objs.upTriangles, this.options, this.bg ) ){
 							this.bg.next(this.bg);
 						};
-					},
+					}
 				},
 				{
 					options: {

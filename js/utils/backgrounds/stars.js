@@ -57,7 +57,7 @@ define([
 						if( effects.scale_in(this.bg.scene.objs.stars, this.options, this.bg) ){
 							this.bg.next(this.bg);
 						};
-					},
+					}
 				},
 				{
 					options: {

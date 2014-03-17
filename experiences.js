@@ -1430,7 +1430,7 @@ define([],function(){
 			],
 
 
-			status: "dismissed",
+			status: "dismissed"
 		},
 
 		{
