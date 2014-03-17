@@ -41,6 +41,8 @@ define([
 		actions: {
 
 			main: {
+				hide: false,
+
 				init: function(attributes){
 					var action = this;
 					setTimeout(function(){

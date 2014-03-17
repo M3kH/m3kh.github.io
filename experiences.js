@@ -179,7 +179,7 @@ define([],function(){
 			title: "Software developer for Directness",
 
 
-			description: "Software developer <br/> I joined the company as a Front-End expert, but this was just one of my assignments. <br/> A 'Full-Stack Developer' would be a better description for my work at <b>CustomerGauge</b>.<br/>I collected requirements and managed several projects fully compatible within the CustomerGauge software. These consisted of fully built UIs and functionalities that were rolled out to a global customer base, here some of them: <ul> <li> <h2>Testimonial Publisher</h2> UI and full functionalities to get collected feedback with comments and export them to embed them in your website. </li> <li> <h2>Mail Engine</h2> UI to manage Queue of Contacts records and send them HTML Emails through the MailExpress ( a Python-Enigne ). </li> <li> <h2>Survey Builder</h2> UI and some functionalities for build survey with different widgets and options.</li> </ul>",
+			description: "Software developer <br/> I joined the company as a Front-End expert, but this was just one of my assignments. <br/> A 'Full-Stack Developer' would be a better description for my work at <b>CustomerGauge</b>.<br/>I collected requirements and managed several projects fully compatible within the CustomerGauge software. These consisted of fully built UIs and functionalities that were rolled out to a global customer base, here some of them: <ul> <li> <h2>Testimonial Publisher</h2> UI and full functionalities to get collected feedback with comments and export them to embed them in your website. </li> <li> <h2>Mail Engine</h2> UI to manage Queue of Contacts records and send them HTML Emails through the MailExpress ( a Python-Enigne ). </li> <li> <h2>Survey Builder</h2> UI and some functionalities to build survey with different widgets and options.</li> </ul>",
 
 
 			company: "directness",
@@ -712,7 +712,7 @@ define([],function(){
 			title: "Web Portal, for Ordine Ingegneri delle Provincia di Pistoia",
 
 
-			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after winning public competitions for the best quality and technical offers. We focused on improving the website for the engineers focusing on their needs and preferences.<br/> We used a <b>WordPress</b> base and we customized it to get a <b>CMS</b> style. Inside the platform, I built many features as plugins to the platform. These included: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user which would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to add decide which information to show, and even add additional ones like: Picture Profile, Personal CV and tag himself to a keywords of their job.</li></ul>",
+			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after winning public competitions for the best quality and technical offers. We focused on improving the website for engineers focusing on their needs and preferences.<br/> We used a <b>WordPress</b> base and we customized it to get a <b>CMS</b> style. Inside the platform, I built many features as plugins to the platform. These include: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user which would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to decide which information to show, and even add additional ones like: Picture Profile, Personal CV and tag himself to some keywords of their job.</li></ul>",
 
 
 			company: "archita",
@@ -1043,7 +1043,7 @@ define([],function(){
 			title: "Logo paint for University of Pisa",
 
 
-			description: "Logo paint, made with spray and stencil for the Pisa Univeristy, at the “Laboratorio di cultura digitale”.",
+			description: "Logo paint, made with spray and stencil for the Pisa University, at the “Laboratorio di cultura digitale”.",
 
 
 			company: "unipi",
@@ -1099,7 +1099,7 @@ define([],function(){
 			title: "Murales at \"Arte sui tubi\"",
 
 
-			description: "Murales creation 3x2m for the “Arte sui tubi” event at the Leopolda station.",
+			description: "Murales creation 3x2m for “Arte sui tubi” event at the Leopolda station.",
 
 
 			company: "leopolda",
@@ -1211,7 +1211,7 @@ define([],function(){
 			title: "Video editing for the company SCA, at archita company.",
 
 
-			description: "For internal presentation and then for the B2B patterns, videos editing and mastering for new products.",
+			description: "For an internal presentation and then for the B2B patterns, videos editing and mastering for new products.",
 
 
 			company: "archita",
@@ -1536,7 +1536,7 @@ define([],function(){
 			title: "Website for Teknoweb s.r.l.",
 
 
-			description: "Website creation for Teknoweb, industry of machinary dedicated to the creation of wet wipes",
+			description: "Website creation for Teknoweb, industry of machinary dedicated to the creation of wet wipes and paper technologies.",
 
 			url: "http://www.teknoweb.com/",
 
@@ -1622,7 +1622,7 @@ define([],function(){
 
 			year: "2010",
 
-			title: "Website creation for the café \"Note Amare\"",
+			title: "Website creation for café \"Note Amare\"",
 
 
 			description: "Website creation for the café “Note Amare”, at archita company.",
@@ -1699,7 +1699,7 @@ define([],function(){
 			title: "Wesite and CMS creation DixitPress.",
 
 
-			description: "Wesite creation DixitPress and CMS system for manage the online publication of media.",
+			description: "Wesite creation DixitPress and CMS system to manage the online publication of media.",
 
 			url: "http://www.dixitpress.it/",
 
@@ -2075,7 +2075,7 @@ define([],function(){
 			title: "Samarcanda",
 
 
-			description: "Designer for the t-shirt to Samdays event (Riva del Garda).",
+			description: "T-shirt Designer for Samdays event (Riva del Garda).",
 
 
 			company: "me",
