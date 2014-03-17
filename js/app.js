@@ -47,7 +47,10 @@ define([
 						app.bg.stars.start();
 					},25);
 					app.hideMenu();
-					$("#main").css({'opacity': 0, 'display': 'table-cell'}).animate({'opacity': 1}, 500);
+					app.onAnimationEnd("#main", function(){
+						$("#main").removeClass("animated fadeIn");
+					});
+					$("#main").addClass("animated fadeIn").css({'display': 'table-cell'});
 
 					// bg_stars.init();
 				},
@@ -57,9 +60,12 @@ define([
 					setTimeout(function(){
 						app.bg.stars.del();
 					},25);
-					setTimeout(function(){
+
+					app.onAnimationEnd("#main", function(){
+						$("#main").removeClass("animated fadeOut").css({'display': 'none'});
 						cb(attributes);
-					}, 3000);
+					});
+					$("#main").addClass("animated fadeOut");
 				}
 			},
 
