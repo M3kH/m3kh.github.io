@@ -6,7 +6,7 @@ define([],function(){
 
 			title: "My CV Update",
 
-			description: "I spent almost a week building this website. I made it with love and JS. Thanks to the last HTML standard I got the possibility to draw my decorations just with lines of code, without using raster images.<br/><br/> You can find this website on <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>, here a list of JS libraries I used for build up <ul><li><a href=\"http://www.backbonejs.org\" target=\"_blank\">Backbone.js</a></li><li><a href=\"http://www.http://paperjs.org/\" target=\"_blank\">Paper.js</a></li><li><a href=\"http://www.d3js.org/\" target=\"_blank\">D3.js</a></li></ul>",
+			description: "This website, my complete CV and professional work history was completed within a week. I made it with love and JS. Thanks to the power of the latest HTML5 standards, I was able to animate with simple lines of code.<br/><br/> This website can be found on GitHub <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>, below you will find a list of the JS libraries I used to build the site: <ul><li><a href=\"http://www.backbonejs.org\" target=\"_blank\">Backbone.js</a></li><li><a href=\"http://www.http://paperjs.org/\" target=\"_blank\">Paper.js</a></li><li><a href=\"http://www.d3js.org/\" target=\"_blank\">D3.js</a></li></ul>",
 
 			company: "me",
 
@@ -94,7 +94,7 @@ define([],function(){
 
 			title: "Open Source projects",
 
-			description: "I like to share even if it is not always easy. I don't just want to keep my swish-kniff tool for myself, so I build up some repositories with different projects:<ul><li><h2>Tire-Bouchon</h2>A PHP bootstrap framework with ORM integration and JS and View strategies. <br/><br/><a href='https://github.com/M3kH/tire-bouchon' target='_blank'>GitHub</a></li><li><h2>Socks Logger</h2>A node.js runtime server, for manage logs in your application like dirty socks. <br/><br/><a href='https://github.com/M3kH/socks-logger' target='_blank'>GitHub</a></li><li><h2>PHP Socks</h2>A PHP integration for the <b>Socks Logger</b>. <br/><br/><a href='https://github.com/M3kH/PHP-Socks' target='_blank'>GitHub</a></li></ul>",
+			description: "I believe in open source, and I love to share my passion and work with the world whenever possible. This is why I have constructed several repositories with different projects. These can be found below: <ul><li><h2>Tire-Bouchon</h2>A PHP bootstrap framework with ORM integration and JS and View strategies. <br/><br/><a href='https://github.com/M3kH/tire-bouchon' target='_blank'>GitHub</a></li><li><h2>Socks Logger</h2>A node.js runtime sever that is an interface to allow logging of applications and manage logs. <br/><br/><a href='https://github.com/M3kH/socks-logger' target='_blank'>GitHub</a></li><li><h2>PHP Socks</h2>A PHP integration for the <b>Socks Logger</b>. <br/><br/><a href='https://github.com/M3kH/PHP-Socks' target='_blank'>GitHub</a></li></ul>",
 
 			company: "me",
 
@@ -179,7 +179,7 @@ define([],function(){
 			title: "Software developer for Directness",
 
 
-			description: "Software developer <br/> I joined the company as a Front-End expert, but this was just one of my assignments. <br/> I think \"Full-Stack developer\" would be a better description for my experience in <b>CustomerGauge</b>.<br/>I collected requirements and I converted them into a  project with UI and full functionalities, here are some of them: <ul> <li> <h2>Testimonial Publisher</h2> UI and full functionalities to get collected feedback with comments and export them to embed them in your website. </li> <li> <h2>Mail Engine</h2> UI to manage Queue of Contacts records and send them HTML Emails through the MailExpress ( a Python-Enigne ). </li> <li> <h2>Survey Builder</h2> UI and some functionalities for build survey with different widgets and options.</li> </ul>",
+			description: "Software developer <br/> I joined the company as a Front-End expert, but this was just one of my assignments. <br/> A 'Full-Stack Developer' would be a better description for my work at <b>CustomerGauge</b>.<br/>I collected requirements and managed several projects fully compatible within the CustomerGauge software. These consisted of fully built UIs and functionalities that were rolled out to a global customer base, here some of them: <ul> <li> <h2>Testimonial Publisher</h2> UI and full functionalities to get collected feedback with comments and export them to embed them in your website. </li> <li> <h2>Mail Engine</h2> UI to manage Queue of Contacts records and send them HTML Emails through the MailExpress ( a Python-Enigne ). </li> <li> <h2>Survey Builder</h2> UI and some functionalities for build survey with different widgets and options.</li> </ul>",
 
 
 			company: "directness",
@@ -417,7 +417,7 @@ define([],function(){
 			title: "Graphic Designer and Business Assistant at Impronte Digitali",
 
 
-			description: "Project Design and Executive of communication for Advertising and Decorations, with printing and digital technologies.<br/> I was responsible for understanding the customer needs and find a graphic and doable solution.<br/> I was in charge of satisfying the customer from the sketch to the final product.",
+			description: "Project Design and Executive of Communication for Advertising and Decorations, with printing and digital technologies.<br/> I was responsible for understanding the customer needs and finding a graphic and doable solution.<br/> I was in charge of satisfying the customer from the sketch to the final product.",
 
 
 			company: "improntedigitali",
@@ -614,7 +614,7 @@ define([],function(){
 			title: "Software Developer and Customer Assistant at Centro Italiano D'Ergonomia",
 
 
-			description: "In the beginning  I join in the company for make a Software for Task and Bills Management, but in the year we choose other strategies for business needs; so I was encharged to cover uncovered roles and try to add my programming Techniques to the role. From the assistance of the customer till the communication strategies and products. In this year I Produced: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
+			description: "In the beginning I joined the company to make a Software for Task and Bills Management, but in the year that I was employed there, we moved towards other strategies for business needs. I was then in charge of finding the best programming techniques to add value to the role. From the assistance of the customer till the communication strategies and products. In this year I was responsible for: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
 
 
 			company: "cie",
@@ -712,7 +712,7 @@ define([],function(){
 			title: "Web Portal, for Ordine Ingegneri delle Provincia di Pistoia",
 
 
-			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after win the public competitions for the best quality and technical offer. We go in deep in their need and try to cover all of them in the website.<br/> We use a base of WordPress and we customize a lot for get a CMS style. Inside there is a lot of features build has “plugin” for <b>WP</b>, some of them: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user witch would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to add decide witch information show, and even add additional once like: Picture Profile, Personal CV and tag him-self to a keywords of their job.</li></ul>",
+			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after winning public competitions for the best quality and technical offers. We focused on improving the website for the engineers focusing on their needs and preferences.<br/> We used a <b>WordPress</b> base and we customized it to get a <b>CMS</b> style. Inside the platform, I built many features as plugins to the platform. These included: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user which would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to add decide which information to show, and even add additional ones like: Picture Profile, Personal CV and tag himself to a keywords of their job.</li></ul>",
 
 
 			company: "archita",
@@ -940,7 +940,7 @@ define([],function(){
 			title: "Stock photos for products of industry SCA",
 
 
-			description: "Stock photos of final products, clean and cutted, for advertising materials.",
+			description: "Stock photos of final products, clean and cut, for advertising materials.",
 
 
 			company: "archita",

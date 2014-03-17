@@ -13,8 +13,6 @@ define(['js/utils/base', 'paper', 'backbone', 'underscore', 'jquery'], function(
 			_.extend(this, attributes);
 			this.options = _.clone(attributes.options);
 			this._options = _.clone(bg.options);
-			console.log(attributes);
-			console.log(this._options);
 			this.bg = params;
 		},
 		_animation: function( bg ){
@@ -120,12 +118,9 @@ define(['js/utils/base', 'paper', 'backbone', 'underscore', 'jquery'], function(
 		},
 
 		next_animation: function(animation, position){
-				console.log(this);
 				// var bg = this;
 				this.defaults.status.position = (position);
 				this.defaults.status.animation = (animation);
-				console.log(this.defaults.status.animation);
-				console.log(this.defaults.status.position);
 		},
 
 		next: function( bg ){
@@ -149,7 +144,7 @@ define(['js/utils/base', 'paper', 'backbone', 'underscore', 'jquery'], function(
 
 			// Mhh.. no series and no position? Wired
 			}else{
-				console.log("Really animation don't have a starting point?");
+				// console.log("Really animation don't have a starting point?");
 				return false;
 			}
 
@@ -163,7 +158,7 @@ define(['js/utils/base', 'paper', 'backbone', 'underscore', 'jquery'], function(
 
 				// Hey this is animation is not defined
 				}else{
-					console.log("Hey why this animation is not defined");
+					// console.log("Hey why this animation is not defined");
 					return false;
 				}
 

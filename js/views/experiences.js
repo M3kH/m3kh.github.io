@@ -221,7 +221,6 @@ define(['backbone', 'underscore', 'jquery', 'js/views/experience', 'd3'], functi
 				var elem =  view.list.find(" > li").eq(eq),
 					actived = view.list.find(" > li.active")[0];
 
-					console.log(actived);
 				if( typeof actived != "undefined" ){
 					var actived = $(actived);
 					view.on_animation_finish(actived, function(){

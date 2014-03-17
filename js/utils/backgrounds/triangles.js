@@ -271,7 +271,6 @@ define([
 					bg.scene.objs.upTriangles[i][j] = triangle;
 				}
 			}
-			console.log(bg.scene.objs.downTriangles);
 		}
 
 	});

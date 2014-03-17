@@ -70,6 +70,7 @@ define([
 					var action = this;
 					setTimeout(function(){
 						app.bg.stars.start();
+						$("#bgs > canvas").css({"opacity": 0.2});
 					},25);
 					app.my_photo_animation_in();
 					app.showMenu();
@@ -81,6 +82,7 @@ define([
 					// bg_stars.destroy(cb, attributes);
 					app.my_photo_animation_out();
 					setTimeout(function(){
+						$("#bgs > canvas").css({"opacity": 1});
 						app.bg.stars.del();
 					},25);
 					setTimeout(function(){
@@ -252,7 +254,6 @@ define([
 
 		render_content: function(print){
 			if( app.check_first_render == false){
-				console.log("Render");
 				var print = print || false;
 				app.experiences = new CollectionExp(experiences);
 				app.view_experiences = new ViewExps({collection: app.experiences, print: print, el: $("#time-line")});

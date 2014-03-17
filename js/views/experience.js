@@ -380,7 +380,6 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 			get_company_desc: function(company){
-				console.log(company);
 				var c = companies.where({ tag : company});
 				if(c.length > 0 && typeof c[0].attributes != "undefined" ){
 					return c[0].attributes;
@@ -453,7 +452,6 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 				tmpl += "<div class='cross'><button class='btn btn-danger btn-xs hide-element'>Don't print this</button></div>";
 				tmpl += "<div class='row'>";
 					if( company_desc != "" && company_desc!= false){
-						console.log(attributes.company);
 						/*
 						 * Render the title with the company desc table
 						 */

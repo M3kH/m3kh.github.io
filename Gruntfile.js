@@ -11,8 +11,7 @@ grunt.initConfig({
 				paths: {
 					"underscore": "bower_components/underscore/underscore",
 					"backbone": "bower_components/backbone/backbone",
-					"paper": "bower_components/paper/dist/paper",
-					"paper-full": "bower_components/paper/dist/paper-full",
+					"paper": "bower_components/paper/dist/paper-core.min",
 					"jquery": "bower_components/jquery/dist/jquery.min",
 					"d3": "bower_components/d3/d3.min",
 					"magnific-popup": "bower_components/magnific-popup/dist/jquery.magnific-popup.min"
@@ -29,8 +28,7 @@ grunt.initConfig({
 				},
 				baseUrl: ".",
 				name: "js/main",
-				out: "dist/ideabile.js",
-				optimize: "none"
+				out: "dist/ideabile.js"
 			}
 		}
 	},
