@@ -473,3 +473,11 @@ dl > dd {
 #main > div > p {
 	color #FFF;
 }
+
+.ie-warning{
+
+}
+
+.ie-warning a{
+	color: #FFF !important;
+}
