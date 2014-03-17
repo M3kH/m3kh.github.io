@@ -172,7 +172,7 @@ define([
 						cb(attributes);
 					}, 2000);
 				}
-			},
+			}
 		},
 
 		my_photo_animation_in: function(){
