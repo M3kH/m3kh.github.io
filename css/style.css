@@ -460,8 +460,7 @@ dl > dd {
 	width: 150px;
 	height: 92px;
 	margin: 0 auto;
-	position: absolute;
-	left: -25px;
+	margin-left: -20px;
 }
 
 #main > div > p {
