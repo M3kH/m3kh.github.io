@@ -92,6 +92,9 @@ font-size: 12px;
 .line-del{
 	text-decoration: line-through;
 }
+#me{
+	display: none !important;
+}
 
 #header-print{
 	display: block !important;
