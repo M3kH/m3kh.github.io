@@ -20,6 +20,52 @@ define([],function(){
 				],
 				about: "",
 				comments: ""
+			},
+			{
+				tag: "cie",
+				name: "Centro Italiano di Ergonomia",
+				urls: [
+					{status: true, link: "http://www.centro-ergonomia.it/", title: "Centro Italiano di Ergonomia"}
+				],
+				about: "",
+				comments: ""
+			},
+			{
+				tag: "cie",
+				name: "Centro Italiano di Ergonomia",
+				urls: [
+					{status: true, link: "http://www.centro-ergonomia.it/", title: "Centro Italiano di Ergonomia"}
+				],
+				about: "",
+				comments: ""
+			},
+			{
+				tag: "archita",
+				name: "Archita",
+				urls: [
+					{status: false, link: "http://www.awtp.it/", title: "Archita - wide thinking people"}
+				],
+				about: "",
+				comments: ""
+			},
+			{
+				tag: "leopolda",
+				name: "Stazione Leopolda Pisa",
+				urls: [
+					{status: true, link: "http://www.leopolda.it/", title: "The organization"},
+					{status: true, link: "http://www.leopolda.it/artisti.php", title: "TemporaneArte link"}
+				],
+				about: "",
+				comments: ""
+			},
+			{
+				tag: "teatrolux",
+				name: "Cinema Teatro Lux",
+				urls: [
+					{status: true, link: "http://www.cinemateatrolux.it/", title: "The organization"}
+				],
+				about: "",
+				comments: ""
 			}
 		];
 		return companies;

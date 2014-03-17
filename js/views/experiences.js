@@ -34,7 +34,7 @@ define(['backbone', 'underscore', 'jquery', 'js/views/experience', 'd3'], functi
 					}));
 				});
 
-				this.summary_chart("#skills_summary", "skill", print);
+				this.summary_chart("#skills_summary", "skills", print);
 				this.summary_chart("#software_summary", "software", print);
 				this.summary_chart("#languages_summary", "programming_languages", print);
 			},

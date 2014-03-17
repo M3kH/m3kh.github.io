@@ -5,6 +5,7 @@ define(['backbone', 'underscore', 'jquery'], function(Backbone, _, $) {
 			routes: {
 				'': 'main',
 				'main': 'main',
+				'me': 'me',
 				'timeline' : 'timeline',
 				'timeline/:id' : 'timeline_show',
 				'languages': 'languages',

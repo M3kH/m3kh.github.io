@@ -6,6 +6,7 @@ body {
 	text-align: center;
 	background: #000;
 	color: #555;
+	overflow-y: scroll;
 	/*background: url("../images/sf-b.png");*/
 	/*background-color: #d8d8d8;*/
 }
@@ -107,6 +108,7 @@ a.disabled, a.disabled:hover {
 	height: 100%;
 	width: 100%;
 	padding-top: 30px;
+	overflow-y: visible;
 	/* text-align: center; */
 }
 
@@ -149,6 +151,21 @@ a.disabled, a.disabled:hover {
 	display: none;
 }
 
+.footer-print{
+	display: none;
+	text-align: center;
+	width: 100%;
+	background: #CCC;
+	font-size: 12px;
+}
+
+.footer-print div{
+	color: #444;
+	margin: 0 auto;
+	text-align: center;
+	width: 800px;
+}
+
 
 /*
  * Panel and Experiences title
@@ -159,6 +176,7 @@ a.disabled, a.disabled:hover {
 	letter-spacing: 0.9em;
 	font-size: 25px;
 	margin-top: 10px;
+	text-shadow: 1px 1px #000;
 }
 
 .panel .space > h2{
@@ -405,11 +423,11 @@ dl > dd {
 /*
  * Main Nav
  */
-.panel#main {
+.panel#main, .panel#me{
 	font-size: 1.2em;
 }
 
-#main > div {
+#main > div, #me > div {
 	width: 340px;
 	border-radius: 200px;
 	border-color: rgba(0,0,0,0.4);
@@ -418,6 +436,32 @@ dl > dd {
 	margin: 0 auto;
 	padding: 40px 50px;
 	margin-top: -20px;
+}
+
+#me > div{
+	width: 700px;
+	font-size: 14px;
+}
+
+.me{
+	display: none !important;
+}
+.me-sprite{
+	display: block;
+	width: 92px;
+	height: 92px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100px;
+	border: 2px solid #FFF;
+}
+.me-sprite > div{
+	width: 150px;
+	height: 92px;
+	margin: 0 auto;
+	position: absolute;
+	left: -25px;
 }
 
 #main > div > p {

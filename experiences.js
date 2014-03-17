@@ -67,17 +67,17 @@ define([],function(){
 				{
 					name: "JSON Schemes",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Data visualization",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 			],
 
@@ -150,12 +150,23 @@ define([],function(){
 				{
 					name: "PHP ReadBean",
 					hours: 10,
-					category: "skill"
+					category: "software"
 				},
 				{
 					name: "Node.js",
 					hours: 20,
-					category: "skill"
+					category: "software"
+				},
+
+				{
+					name: "Auto-Deploy env.",
+					hours: 5,
+					category: "skills"
+				},
+				{
+					name: "Maintanibility",
+					hours: 20,
+					category: "skills"
 				}
 			]
 		},
@@ -254,13 +265,13 @@ define([],function(){
 					category: "software"
 				},
 				{
-					name: "Node.js",
-					hours: 6,
+					name: "Zend Server",
+					hours: 1,
 					category: "software"
 				},
 				{
-					name: "Zend Server",
-					hours: 1,
+					name: "Node.js",
+					hours: 6,
 					category: "software"
 				},
 				{
@@ -283,52 +294,52 @@ define([],function(){
 				{
 					name: "Json Schemes",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Creativity",
 					hours: 6,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "UI Practical Design",
 					hours: 8,
-					category: "skill"
-				},
-				{
-					name: "UX Design",
-					hours: 2,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Project Plan",
 					hours: 3,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Data Mapping",
 					hours: 6,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "SQL Dinamics Query",
 					hours: 8,
-					category: "skill"
+					category: "skills"
+				},
+				{
+					name: "UX Design",
+					hours: 2,
+					category: "skills"
 				},
 				{
 					name: "AMD JS",
 					hours: 7,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "OOP",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "MVC",
 					hours: 4,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -348,24 +359,52 @@ define([],function(){
 
 			images: [
 				{
-					url: "directness/01.jpg",
+					url: "directness/001.jpg",
 					name: "MailExpress Interface"
-				// },
-				// {
-					// url: "directness/02.jpg",
-					// name: "MailExpress Interface"
-				// },
-				// {
-					// url: "directness/03.png",
-					// name: "MailExpress Interface"
-				// },
-				// {
-					// url: "directness/04.png",
-					// name: "MailExpress Interface"
-				// },
-				// {
-					// url: "directness/05.png",
-					// name: "MailExpress Interface"
+				},
+				{
+					url: "directness/002.jpg",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/004.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/006.jpg",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/007.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/008.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/009.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/010.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/011.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/012.png",
+					name: "MailExpress png"
+				},
+				{
+					url: "directness/013.png",
+					name: "MailExpress Interface"
+				},
+				{
+					url: "directness/014.png",
+					name: "MailExpress Interface"
 				}
 			]
 		},
@@ -375,24 +414,15 @@ define([],function(){
 
 			date: "2012-01-01 - 2012-06-18",
 
-			title: "Graphic Designer and Businnes Assistant at Impronte Digitali",
+			title: "Graphic Designer and Business Assistant at Impronte Digitali",
 
 
-			description: "Project Design and Excetued of communication for Advertising and Decorations, with printing and digital tecnologies.<br/> I was respossible to understand the customer needs, and find a graphic and realizable solution.<br/> I was encharged to follow the customer from his needs till sketch till and printing the final product, and when was possible help in the application.",
+			description: "Project Design and Executive of communication for Advertising and Decorations, with printing and digital technologies.<br/> I was responsible for understanding the customer needs and find a graphic and doable solution.<br/> I was in charge of satisfying the customer from the sketch to the final product.",
 
 
 			company: "improntedigitali",
 
 			details: [
-
-
-
-
-				{
-					name: "Italian",
-					hours: 5,
-					category: "languages"
-				},
 
 
 				{
@@ -457,7 +487,7 @@ define([],function(){
 
 
 				{
-					name: "Mimaky Print and Cut Plotter",
+					name: "Mimaky Plotter",
 					hours: 5,
 					category: "tools"
 				},
@@ -482,47 +512,47 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 9,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 9,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Business Management",
 					hours: 3,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Car Wrapping",
 					hours: 3,
-					category: "skill"
-				},
-				{
-					name: "Windows Stickers",
-					hours: 3,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Small format",
 					hours: 9,
-					category: "skill"
+					category: "skills"
+				},
+				{
+					name: "Windows Stickers",
+					hours: 3,
+					category: "skills"
 				},
 				{
 					name: "Poster Designing",
 					hours: 6,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "UX Design",
 					hours: 1,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Project Plan",
 					hours: 4,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -547,6 +577,30 @@ define([],function(){
 				},
 				{
 					url: "impronte/02.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/03.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/04.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/05.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/06.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/07.png",
+					name: "Landing page"
+				},
+				{
+					url: "impronte/08.png",
 					name: "Landing page"
 				}
 			]
@@ -608,39 +662,39 @@ define([],function(){
 
 
 				{
+					name: "Business Management",
+					hours: 6,
+					category: "skills"
+				},
+				{
 					name: "Creativity",
 					hours: 2,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 4,
-					category: "skill"
-				},
-				{
-					name: "Business Management",
-					hours: 6,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Windows Stickers",
 					hours: 3,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Small format",
 					hours: 9,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Poster Designing",
 					hours: 6,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "UX Design",
 					hours: 1,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -787,7 +841,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -810,6 +864,21 @@ define([],function(){
 					}
 				}
 			],
+
+			images:[
+				{
+					url: "archita/europackaging/01.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/europackaging/02.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/europackaging/03.png",
+					name: "Landing page"
+				}
+			]
 
 		},
 
@@ -845,17 +914,17 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Commmunication",
 					hours: 5,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 9,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -904,12 +973,12 @@ define([],function(){
 				{
 					name: "Photography",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Photo Manipulation",
 					hours: 5,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -958,7 +1027,7 @@ define([],function(){
 				{
 					name: "Video Editing",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1014,7 +1083,7 @@ define([],function(){
 				{
 					name: "PVC Sticker Application",
 					hours: 4,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1070,7 +1139,7 @@ define([],function(){
 				{
 					name: "PVC Sticker Application",
 					hours: 4,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1126,7 +1195,7 @@ define([],function(){
 				{
 					name: "PVC Sticker Application",
 					hours: 4,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1165,7 +1234,7 @@ define([],function(){
 				{
 					name: "Video Editing",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1181,7 +1250,7 @@ define([],function(){
 			title: "3D Stand for Paper Expo",
 
 
-			description: "3D rendering for the industry Tecknoweb, at archita company.",
+			description: "3D rendering for the industry Teknoweb, at archita company.",
 
 
 			company: "archita",
@@ -1204,7 +1273,7 @@ define([],function(){
 				{
 					name: "3D CAD",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1244,7 +1313,7 @@ define([],function(){
 				{
 					name: "Video Editing",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1281,7 +1350,7 @@ define([],function(){
 				{
 					name: "Video Editing",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1336,7 +1405,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1412,7 +1481,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1436,8 +1505,26 @@ define([],function(){
 				}
 			],
 
+			images:[
+				{
+					url: "archita/passerini_recuperi/01.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/passerini_recuperi/02.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/passerini_recuperi/03.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/passerini_recuperi/04.png",
+					name: "Landing page"
+				}
+			],
 
-			status: "dismissed",
+			status: "dismissed"
 		},
 
 
@@ -1487,7 +1574,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1509,8 +1596,23 @@ define([],function(){
 					related : {
 					}
 				}
-			]
+			],
 
+
+			images:[
+				{
+					url: "archita/teknoweb/01.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/teknoweb/02.png",
+					name: "Landing page"
+				},
+				{
+					url: "archita/teknoweb/03.png",
+					name: "Landing page"
+				}
+			]
 
 		},
 
@@ -1561,7 +1663,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1635,7 +1737,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1675,7 +1777,7 @@ define([],function(){
 			description: "Official photographer for the event “Sulle note di Ale”",
 
 
-			company: "free",
+			company: "me",
 
 			details: [
 
@@ -1703,12 +1805,12 @@ define([],function(){
 				{
 					name: "Photography",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Photo Manipulation",
 					hours: 5,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1762,7 +1864,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {
@@ -1829,12 +1931,12 @@ define([],function(){
 				{
 					name: "Photography",
 					hours: 8,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Photo Manipulation",
 					hours: 5,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1845,7 +1947,7 @@ define([],function(){
 		{
 
 
-			date: "2007",
+			year: "2007",
 
 			title: "Comune di Lampedusa",
 
@@ -1879,12 +1981,12 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1905,9 +2007,9 @@ define([],function(){
 		{
 
 
-			date: "2007",
+			year: "2007",
 
-			title: "Personal Projects",
+			title: "Mr. Box Personal Projects",
 
 
 			description: "Social multimedia project creation, Mr. Box.",
@@ -1943,12 +2045,12 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -1968,7 +2070,7 @@ define([],function(){
 		{
 
 
-			date: "2006",
+			year: "2006",
 
 			title: "Samarcanda",
 
@@ -1994,12 +2096,12 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -2045,12 +2147,12 @@ define([],function(){
 				{
 					name: "Creativity",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				},
 				{
 					name: "Graphic Design",
 					hours: 10,
-					category: "skill"
+					category: "skills"
 				}
 			],
 
@@ -2113,7 +2215,7 @@ define([],function(){
 
 
 				{
-					name: "Smarty Template Engine",
+					name: "Smarty PHP",
 					hours: 8,
 					category: "software",
 					related : {

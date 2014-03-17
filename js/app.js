@@ -43,7 +43,9 @@ define([
 			main: {
 				init: function(attributes){
 					var action = this;
-					app.bg.stars.start();
+					setTimeout(function(){
+						app.bg.stars.start();
+					},25);
 					app.hideMenu();
 					$("#main").css({'opacity': 0, 'display': 'table-cell'}).animate({'opacity': 1}, 500);
 
@@ -52,10 +54,41 @@ define([
 
 				destroy: function(cb, attributes){
 					// bg_stars.destroy(cb, attributes);
-					app.bg.stars.del();
+					setTimeout(function(){
+						app.bg.stars.del();
+					},25);
 					setTimeout(function(){
 						cb(attributes);
 					}, 3000);
+				}
+			},
+
+			me: {
+				hide: false,
+
+				init: function(attributes){
+					var action = this;
+					setTimeout(function(){
+						app.bg.stars.start();
+					},25);
+					app.my_photo_animation_in();
+					app.showMenu();
+					$("#me").css({'opacity': 0, 'display': 'table-cell'}).animate({'opacity': 1}, 500);
+					// bg_stars.init();
+				},
+
+				destroy: function(cb, attributes){
+					// bg_stars.destroy(cb, attributes);
+					app.my_photo_animation_out();
+					setTimeout(function(){
+						app.bg.stars.del();
+					},25);
+					setTimeout(function(){
+						$("#me").css({'opacity': 0}).animate({'opacity': 1}, 500).css({'display': 'none'});
+					},4000);
+					setTimeout(function(){
+						cb(attributes);
+					}, 5000);
 				}
 			},
 
@@ -118,7 +151,9 @@ define([
 
 			timeline: {
 				init: function(id){
-					app.bg.triangles.start();
+					setTimeout(function(){
+						app.bg.triangles.start();
+					},25);
 					if(typeof id == "undefined"){
 						app.view_experiences.show(0);
 					}
@@ -128,12 +163,62 @@ define([
 				destroy: function(cb, attributes){
 					// render_exp.hide();
 					app.view_experiences.hide();
-					app.bg.triangles.del();
+					setTimeout(function(){
+						app.bg.triangles.del();
+					},25);
 					setTimeout(function(){
 						cb(attributes);
 					}, 2000);
 				}
 			},
+		},
+
+		my_photo_animation_in: function(){
+			var el = $(".me-sprite"),
+				enter = el.find(".enter"),
+				stay = el.find(".stay"),
+				leave = el.find(".leave"),
+				enter_sprites = 145,
+				current = 0;
+
+			var intervall = setInterval(function(){
+				if(current < enter_sprites){
+					var class_name = "enter frame-"+current;
+					enter.attr("class", class_name);
+					current++;
+				}else{
+					stay.show();
+					clearInterval(intervall);
+					intervall = 0;
+				}
+			},25);
+		},
+
+		my_photo_animation_out: function(){
+			var el = $(".me-sprite"),
+				enter = el.find(".enter"),
+				stay = el.find(".stay"),
+				leave = el.find(".leave"),
+				enter_sprites = 145,
+				current = enter_sprites;
+
+			var intervall = setInterval(function(){
+				if(current >= 0){
+					var class_name = "enter frame-"+current;
+					enter.attr("class", class_name);
+					current = current-1;
+				}else{
+					stay.show();
+					clearInterval(intervall);
+					intervall = 0;
+				}
+			},25);
+		},
+
+		async: function(cb){
+			setTimeout(function(){
+				cb();
+			}, 25);
 		},
 
 		show: function( dest, attributes ){
@@ -199,6 +284,12 @@ define([
 			$("body").toggleClass("no-img");
 		},
 
+		init_bg: function(){
+			app.bg = {};
+			app.bg.stars =  new stars({el: "#bgs"});
+			app.bg.triangles =  new triangles({el: "#bgs"});
+		},
+
 		init: function(){
 
 			// setTimeout(function(){
@@ -222,9 +313,7 @@ define([
 
 			}else{
 				app.render_content();
-				app.bg = {};
-				app.bg.stars =  new stars({el: "#bgs"});
-				app.bg.triangles =  new triangles({el: "#bgs"});
+				app.init_bg();
 
 				soundtrack.init();
 				app_router.on('route:print', function () {
@@ -233,6 +322,9 @@ define([
 
 				app_router.on('route:main', function () {
 					app.show( "main" );
+				});
+				app_router.on('route:me', function () {
+					app.show( "me" );
 				});
 				app_router.on('route:timeline', function () {
 					app.show( "timeline" );

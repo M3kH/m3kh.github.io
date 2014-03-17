@@ -16,6 +16,18 @@ a, a:hover{
 
 #all{
 	display: block;
+	height: auto !important;
+	overflow: visible;
+	margin-top: 20px;
+}
+
+
+.panel > .space > div > svg {
+font-size: 18px !important;
+}
+
+.panel > .space > div {
+font-size: 12px;
 }
 
 .eco-print {
@@ -61,6 +73,7 @@ a, a:hover{
 	/*width: 100% !important;*/
 	width: 210mm !important;
 	width: 290mm;
+	padding: 0 20px 20px !important;
 }
 
 .panel > .left, .panel > .right{
@@ -126,7 +139,7 @@ a, a:hover{
 }
 
 .visible-print{
-	display: block !important;
+	/*display: block !important;*/
 }
 
 #main{
@@ -140,6 +153,21 @@ a, a:hover{
 	/*width: 50% !important;*/
 	/*float: left;*/
 }
+
+.experencies > li .cross {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	z-index: 33;
+}
+.experencies > li.hide{
+	display: none !important;
+}
+
+.experencies > li:hover .cross {
+	display: block;
+}
 .experencies li .year{
 	color: #FFF;
 	position: absolute;
@@ -152,6 +180,20 @@ a, a:hover{
 .experencies-nav{
 	display: none !important;
 }
+
+.experencies li .pie-chart{
+	width: 350px !important;
+}
+
+.experencies li .pie-chart .labels{
+	width: 350px !important;
+	height: 150px !important;
+}
+
+.experencies li .pie-chart .labels span{
+	padding: 20px 100px;
+}
+
 #bg-noise{
 	opacity: 0.1;
 }
@@ -165,7 +207,7 @@ a, a:hover{
 	width: auto !important;
 }
 .panel .space > h2 {
-	padding-bottom: 20px;
+	padding-bottom: 0px !important;
 	border-bottom: 1px solid #000;
 }
 .experencies{
@@ -200,6 +242,8 @@ a, a:hover{
 
 .panel h2 {
 	letter-spacing: normal !important;
+	text-shadow: none !important;
+	margin-bottom: 12px !important;
 }
 
 dl > *, dl a{

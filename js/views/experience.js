@@ -28,7 +28,13 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 
 			events: {
 				"click .show_gallery": "open_gallery",
-				"click .close_gallery": "close_gallery"
+				"click .close_gallery": "close_gallery",
+				"click .hide-element": "hide_elem"
+			},
+
+			hide_elem: function(){
+				var li = this.$el;
+				li.addClass("hide");
 			},
 
 			open_gallery: function(){
@@ -166,7 +172,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 					chart.append("g")
 						.attr("class", "lines");
 
-					var g = chart.selectAll(".arc")
+					var g = chart.select(".slices").selectAll(".arc")
 						.data( pie( d3.entries( series ) ) )
 						.enter().append("g")
 						.attr("class", "arc");
@@ -193,10 +199,10 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 
 				},
 
-				render_new: function( id, data ){
+				render_with_labels: function( id, data ){
 					var series = data,
-						margin = {top: 20, right: 20, bottom: 20, left: 20};
-						width = 200 - margin.left - margin.right;
+						margin = {top: 20, right: 100, bottom: 20, left: 100};
+						width = 350 - margin.left - margin.right;
 						height = width - margin.top - margin.bottom;
 
 					var chart = d3.select("#"+id+" .chart")
@@ -216,7 +222,9 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 						.sort(null)
 						.startAngle(1.1*Math.PI)
 						.endAngle(3.1*Math.PI)
-						.value(function(d) { return d.hours; });
+						.value(function(d) { return d.value.hours; }),
+
+					pie_data =  pie( d3.entries( series ) );
 
 					chart.append("g")
 						.attr("class", "slices");
@@ -225,10 +233,10 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 					chart.append("g")
 						.attr("class", "lines");
 
-					// var g = chart.selectAll(".arc")
-						// .data( pie( d3.entries( series ) ) )
-						// .enter().append("g")
-						// .attr("class", "arc");
+					var g = chart.select(".slices").selectAll(".arc")
+						.data( pie_data )
+						.enter().append("g")
+						.attr("class", "slice");
 
 
 					var color = d3.scale.ordinal()
@@ -242,105 +250,76 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 
 					// return {path: g, arc: arc, id: id, size: {width: width, height: height}};
 
-					// var path = g.append("path");
-//
-					// path.style("fill", function(d) { return color(d.data.value.name); }).attr('d', function(d) {
-						// return arc(d);
-					// });
+					var path = g.append("path");
 
-
-					var slice = chart.select(".slices").selectAll("path.slice")
-							.data(pie(data), function(d){
-								// console.log(d);
-								return d.data.hours;
-							});
-
-						slice.enter()
-							.insert("path")
-							.style("fill", function(d) {return color(d.data.name); })
-							.attr("class", "slice");
-
-						slice
-						.attr("d", function(d){
-							return arc(d);
-						});
-
-						slice.exit()
-							.remove();
-
+					path.style("fill", function(d) { return color(d.data.value.name); }).attr('d', function(d) {
+						return arc(d);
+					});
 
 
 					/* ------- TEXT LABELS -------*/
 
 					var text = chart.select(".labels").selectAll("text")
-						.data(pie(data), function(d){
-							return d.data.name;
+						.data( pie_data , function(d){
+							// console.log(d);
+							return d.data.value.name;
 						});
 
 					text.enter()
 						.append("text")
 						.attr("dy", ".35em")
 						.style("font-size", "10px")
-						.attr("translate", function(d){
-							this._current = this._current || d;
-							var interpolate = d3.interpolate(this._current, d);
-							this._current = interpolate(0);
-							var d2 = interpolate(d);
-							var pos = arc.centroid(d2);
-							pos[0] = radius * (midAngle(d2) < Math.PI ? 1 : -1);
-							console.log(pos);
+						.attr("transform", function(d) {
+							var pos = arc.centroid(d);
+							if(pos[0] > 0){
+								pos[0] = radius+margin.left;
+							}else{
+								pos[0] = (radius*-1)-margin.right;
+							}
 							return "translate("+ pos +")";
 						})
 						.text(function(d) {
-							return d.data.name;
-						})
-						.attr("text-anchor", function(d){
-							this._current = this._current || d;
-							var interpolate = d3.interpolate(this._current, d);
-							this._current = interpolate(0);
-							return function(t) {
-								var d2 = interpolate(t);
-								return midAngle(d2) < Math.PI ? "start":"end";
-							};
+							return d.data.value.name;
+						}).attr("text-anchor", function(d){
+							var pos = arc.centroid(d);
+							if(pos[0] > 0){
+								return "end";
+							}else{
+								return "start";
+							}
 						});
-
-					function midAngle(d){
-						return d.startAngle + (d.endAngle - d.startAngle)/2;
-					}
-
 					text.exit()
 						.remove();
 
 					/* ------- SLICE TO TEXT POLYLINES -------*/
 
 					var polyline = chart.select(".lines").selectAll("polyline")
-						.data(pie(data), function(d){
-							return d.data.name;
+						.data(pie_data, function(d){
+							return d.data.value.name;
 						});
-
 					polyline.enter()
 						.append("polyline");
 
-					polyline.transition().duration(1000)
-						.attrTween("points", function(d){
-							this._current = this._current || d;
-							var interpolate = d3.interpolate(this._current, d);
-							this._current = interpolate(0);
-							return function(t) {
-								var d2 = interpolate(t);
-								var pos = arc.centroid(d2);
-								pos[0] = radius * 0.95 * (midAngle(d2) < Math.PI ? 1 : -1);
-								return [arc.centroid(d2), arc.centroid(d2), pos];
-							};
-						});
+					polyline
+					.attr("points", function(d){
+						var pos = arc.centroid(d);
+						var previous = _.clone(pos);
+						if(pos[0] > 0){
+							pos[0] = radius+margin.left;
+							previous[0] = previous[0]+8;
+						}else{
+							pos[0] = (radius*-1)-margin.right;
+							previous[0] = previous[0]-8;
+						}
 
+						pos[1] = pos[1]+8;
+						previous[1] = previous[1]+8;
+
+
+						return [arc.centroid(d), arc.centroid(d), previous, pos];
+					}).attr("stroke", "#000").attr("stroke-width", 1).attr("fill", "none");
 					polyline.exit()
 						.remove();
-
-					// path.on("mouseover", this.pie.on_mouse_over );
-
-					// d3.select("#"+chart.id).on("mouseleave", this.pie.on_mouse_leave );
-
 
 					return true;
 
@@ -392,7 +371,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 
-			tagsToName: function( tag ){
+			tags_to_name: function( tag ){
 				var t = tag;
 				t = t.replace("-", " ");
 				t = t.replace("_"," ");
@@ -401,6 +380,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 			get_company_desc: function(company){
+				console.log(company);
 				var c = companies.where({ tag : company});
 				if(c.length > 0 && typeof c[0].attributes != "undefined" ){
 					return c[0].attributes;
@@ -424,7 +404,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 								tmpl += "<dt>Website</dt><dd>";
 								tmpl += "<% _.each(urls, function(url){ ";
 								tmpl += " if(url.status == true){ %>";
-									tmpl += "<a href='<%= url.link %>' title='<%= url.title %>'><%= url.title %></a><br/>";
+									tmpl += "<a href='<%= url.link %>' target='_blank' title='<%= url.title %>'><%= url.title %></a><br/>";
 								tmpl += "<% }else{ %>";
 									tmpl += "<a href='#' title='<%= url.title %>' class=\"disabled\"><%= url.title %></a><br/>";
 								tmpl += "<% } ";
@@ -469,6 +449,8 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 
 				var years = this.render_years(attributes),
 					company_desc =  this.render_company_desc(attributes);
+
+				tmpl += "<div class='cross'><button class='btn btn-danger btn-xs hide-element'>Don't print this</button></div>";
 				tmpl += "<div class='row'>";
 					if( company_desc != "" && company_desc!= false){
 						console.log(attributes.company);
@@ -511,13 +493,19 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 			tmpl: function(attributes){
-				var tmpl = '';
+				var tmpl = '',
+					glr_button = '';
 				// console.log( this.options.print );
 
 				//This render the gallery
 				if( typeof attributes.images != "undefined" && attributes.images.length > 0 ){
 					tmpl += "<div class='title'><div class='gallery'>"+ this.render_gallery(attributes.images)+"</div>";
-					tmpl +="<div class='overlay'><h2><%= title %></h2><a href=\"#showGallery\" class=\"btn btn-primary show_gallery\">Show the gallery <span class='icon icon-pictures'></span></a></div></div>";
+
+					if(attributes.images.length > 1){
+						glr_button += "<a href=\"#showGallery\" class=\"btn btn-primary show_gallery\">Show the gallery <span class='icon icon-pictures'></span></a>";
+					}
+
+					tmpl +="<div class='overlay'><h2><%= title %></h2>"+glr_button+"</div></div>";
 				}else{
 					tmpl += "<h2><%= title %></h2>";
 				}
@@ -577,7 +565,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			render_details_chart: function(id, category){
 				var data = this.model.get_data_chart(category);
 				if(this.options.print){
-					this.pie.render(id, data);
+					this.pie.render_with_labels(id, data);
 				}else{
 					this.waiting_rendering[id] = this.pie.render_for_animation(id, data);
 				}
@@ -588,7 +576,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 					data = that.model.attributes;
 
  				data.cid = that.model.cid;
- 				data.tagsToName = that.tagsToName;
+ 				data.tagsToName = that.tags_to_name;
 
 				that.$el.html(that.template(data));
 				if( data.categories.length > 0 ){
