@@ -41,7 +41,7 @@ define(['js/utils/base', 'paper', 'backbone', 'underscore', 'jquery'], function(
 				animation: ''
 			},
 			exit_time: 1000,
-			objs: {},
+			objs: {}
 		},
 
 		show: function(){

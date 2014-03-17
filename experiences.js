@@ -1688,7 +1688,7 @@ define([],function(){
 			],
 
 
-			status: "dismissed",
+			status: "dismissed"
 		},
 
 		{
@@ -1762,7 +1762,7 @@ define([],function(){
 			],
 
 
-			status: "dismissed",
+			status: "dismissed"
 		},
 
 
@@ -1889,7 +1889,7 @@ define([],function(){
 			],
 
 
-			status: "dismissed",
+			status: "dismissed"
 		},
 
 		{
@@ -2000,7 +2000,7 @@ define([],function(){
 					link: "",
 					desc: ""
 				}
-			],
+			]
 		},
 
 
@@ -2064,7 +2064,7 @@ define([],function(){
 					link: "",
 					desc: ""
 				}
-			],
+			]
 		},
 
 		{
@@ -2115,7 +2115,7 @@ define([],function(){
 					link: "",
 					desc: ""
 				}
-			],
+			]
 		},
 
 		{
@@ -2166,7 +2166,7 @@ define([],function(){
 					link: "",
 					desc: ""
 				}
-			],
+			]
 		},
 
 		{
@@ -2240,7 +2240,7 @@ define([],function(){
 			],
 
 
-			status: "dismissed",
+			status: "dismissed"
 		}
 		];
 		return experiences;
