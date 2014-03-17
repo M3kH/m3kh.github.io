@@ -78,7 +78,7 @@ define([],function(){
 					name: "Data visualization",
 					hours: 10,
 					category: "skills"
-				},
+				}
 			]
 		},
 
