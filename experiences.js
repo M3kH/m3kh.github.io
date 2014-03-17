@@ -79,13 +79,6 @@ define([],function(){
 					hours: 10,
 					category: "skills"
 				},
-			],
-
-			images: [
-				{
-					url: "me/ispirations.jpg",
-					name: "MailExpress Interface"
-				}
 			]
 		},
 
