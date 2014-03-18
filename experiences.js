@@ -6,7 +6,7 @@ define([],function(){
 
 			title: "My CV Update",
 
-			description: "This website, my complete CV and professional work history was completed within a week. I made it with love and JS. Thanks to the power of the latest HTML5 standards, I was able to animate it with simple lines of code.<br/><br/> This website can be found on <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>, below you will find a list of the JS libraries I used to build the site: <ul><li><a href=\"http://www.backbonejs.org\" target=\"_blank\">Backbone.js</a></li><li><a href=\"http://www.http://paperjs.org/\" target=\"_blank\">Paper.js</a></li><li><a href=\"http://www.d3js.org/\" target=\"_blank\">D3.js</a></li></ul>",
+			description: "This website, my complete CV and professional work history was completed within a week. I made it with love and JS. Thanks to the power of the latest HTML5 standards, I was able to animate it with simple lines of code.<br/><br/> This website can be found on <a href='https://github.com/M3kH/ideabile.com' target='_blank'>GitHub</a>. Below you will find a list of the JS libraries I used to build the site: <ul><li><a href=\"http://www.backbonejs.org\" target=\"_blank\">Backbone.js</a></li><li><a href=\"http://www.http://paperjs.org/\" target=\"_blank\">Paper.js</a></li><li><a href=\"http://www.d3js.org/\" target=\"_blank\">D3.js</a></li></ul>",
 
 			company: "me",
 
@@ -172,7 +172,7 @@ define([],function(){
 			title: "Software developer for Directness",
 
 
-			description: "Software developer <br/> I joined the company as a Front-End expert, but this was just one of my assignments. <br/> A 'Full-Stack Developer' would be a better description for my work at <b>CustomerGauge</b>.<br/>I collected requirements and managed several projects fully compatible within the CustomerGauge software. These consisted of fully built UIs and functionalities that were rolled out to a global customer base, here are some of them: <ul> <li> <h2>Testimonial Publisher</h2> UI and full functionalities to get collected feedback with comments and export them to embed them in your website. </li> <li> <h2>Mail Engine</h2> UI to manage Queue of Contacts records and send them HTML Emails through the MailExpress ( a Python-Enigne ). </li> <li> <h2>Survey Builder</h2> UI and some functionalities to build survey with different widgets and options.</li> </ul>",
+			description: "Software developer <br/> In this fast-paced <b>Software-as-a-Service</b> business, my job title was <i>Front End Developer</i>, but in reality, <i>\"Full Stack Developer\"</i> would be a more accurate description of my role.<br/> I managed and developed key UIs and functionalities that were rolled out to a global customer base. Among the most significant were the following: <ul> <li> <h2>Testimonial Publisher</h2> UI and functionality to export filtered customer feedback and embed rolling comments on your website.</li> <li> <h2>Mail Engine</h2> UI to manage a Queue of Contacts, and design and create HTML emails to be sent through MailExpress (a Python Engine). </li> <li> <h2>Survey Builder</h2>UI and functionalities that enables users to build customer satisfaction surveys with different widgets and customization.</li> </ul>",
 
 
 			company: "directness",
@@ -410,7 +410,7 @@ define([],function(){
 			title: "Graphic Designer and Business Assistant at Impronte Digitali",
 
 
-			description: "Project Design and Executive of Communication for Advertising and Decorations, with printing and digital technologies.<br/> I was responsible for understanding the customer needs and finding a graphic and doable solution.<br/> I was in charge of satisfying the customer from the sketch to the final product.",
+			description: "Project Design and Executive of Communication for Advertising and Decorations, with printing and digital technologies.<br/> My key responsibilities included: <ul><li> Identifying the customer's needs and collaborating with them to find a solution that fit their budget and requirements.</li><li>Ensuring that the customer stayed engaged and satisfied with the project from start to finish.</li></ul>",
 
 
 			company: "improntedigitali",
@@ -607,7 +607,7 @@ define([],function(){
 			title: "Software Developer and Customer Assistant at Centro Italiano D'Ergonomia",
 
 
-			description: "In the beginning I joined the company to make a Software for Task and Bills Management, but in the year that I was employed there, we moved towards other strategies for business needs. I was then in charge of finding the best programming techniques to add value to the role. From the assistance of the customer till the communication strategies and products. In this year I was responsible for: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
+			description: "When I joined the company I was originally tasked with developing Tasks and Bills management software, but over the course of the year we moved toward other projects for different business needs.<br/> My key projects included: <ul> <li>Task and Bill Basic Management System</li> <li>Booker for Educational Courses</li> <li>Software for autogeneration of PDF Certificates</li> </ul>",
 
 
 			company: "cie",
@@ -702,10 +702,10 @@ define([],function(){
 
 			year: "2010",
 
-			title: "Web Portal, for Ordine Ingegneri delle Provincia di Pistoia",
+			title: "Web Portal, for Ordine Ingegneri della Provincia di Pistoia",
 
 
-			description: "Ordine degli ingegneri, is a registry of engineers for the province of Pistoia, after winning public competitions for the best quality and technical offers. We focused on improving the website for engineers focusing on their needs and preferences.<br/> We used a <b>WordPress</b> base and we customized it to get a <b>CMS</b> style. Inside the platform, I built many features as plugins for the platform. These include: <ul> <li><h2>Members synchronization</h2> They have a database and they want to show their members in the website; I deliver them something more, the possibility to synchronize the database and live the power of the data to the user which would be able to get control of the profile if their email is in the registry.</li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to decide which information to show, and even add additional ones like: Picture Profile, Personal CV and tag himself to some keywords of their job.</li></ul>",
+			description: "<b>Ordine degli ingegneri</b> is an association of engineers in the province of Pistoia. We revamped its website using a <b>WordPress</b> base and customized it to get a <b>CMS</b> style. Inside the platform, I built a number of plugins. These included: <ul> <li><h2>Members synchronization</h2></li> <li><h2>Custom Profile Informations</h2> Each member has the possibility to decide which information to show, and even add extra information such as profile picture, personal CV, or tag him or herself with keywords.</li></ul>",
 
 
 			company: "archita",
@@ -984,10 +984,10 @@ define([],function(){
 
 			year: "2010",
 
-			title: "Cameraman for Learn to Leed",
+			title: "Cameraman for Learn to Lead",
 
 
-			description: "I manage the Video Recording of the Event \"Learn to Leed\" at the industry Fabio Pierini S.P.A ",
+			description: "Management of video recording the event \"Learn to Lead\" for Fabio Pierini ",
 
 
 			company: "archita",
@@ -1092,7 +1092,7 @@ define([],function(){
 			title: "Murales at \"Arte sui tubi\"",
 
 
-			description: "Murales creation 3x2m for “Arte sui tubi” event at the Leopolda station.",
+			description: "Mural creation 3x2m for “Arte sui tubi” event at the Leopolda station.",
 
 
 			company: "leopolda",
@@ -1148,7 +1148,7 @@ define([],function(){
 			title: "Live Painting at Stazione Leopolda",
 
 
-			description: "Murales creation 4x2m for the live painting event at the Stazione Leopolda.",
+			description: "Mural creation 4x2m for the live painting event at the Stazione Leopolda.",
 
 
 			company: "leopolda",
@@ -1434,7 +1434,7 @@ define([],function(){
 			title: "Website for Passerini Recuperi",
 
 
-			description: "Website creation Passerini Recuperi, recycling company.",
+			description: "Website creation for Passerini Recuperi, a recycling company.",
 
 			url: "http://www.passerinirecuperi.com",
 
@@ -1529,7 +1529,7 @@ define([],function(){
 			title: "Website for Teknoweb s.r.l.",
 
 
-			description: "Website creation for Teknoweb, industry of machinary dedicated to the creation of wet wipes and paper technologies.",
+			description: "Website creation for Teknoweb, the industry that manufactures wet wipes and paper technologies.",
 
 			url: "http://www.teknoweb.com/",
 
@@ -1689,10 +1689,10 @@ define([],function(){
 
 			year: "2010",
 
-			title: "Wesite and CMS creation DixitPress.",
+			title: "Website and CMS creation DixitPress.",
 
 
-			description: "Wesite creation DixitPress and CMS system to manage the online publication of media.",
+			description: "Website creation DixitPress and <b>CMS</b> system to manage the publication of online media.",
 
 			url: "http://www.dixitpress.it/",
 
