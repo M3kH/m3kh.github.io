@@ -13,7 +13,7 @@ define(['backbone', 'underscore', 'jquery', 'js/views/experience', 'd3'], functi
 					print = false;
 				this._experiences = [];
 
-				if(arguments.print){
+				if(arguments.print == true){
 					print = true;
 				}
 

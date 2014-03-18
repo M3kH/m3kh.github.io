@@ -162,7 +162,7 @@ font-size: 12px;
 	position: absolute;
 	right: 0;
 	top: 8px;
-	z-index: 33;
+	z-index: 2;
 }
 .experencies > li.hide{
 	display: none !important;

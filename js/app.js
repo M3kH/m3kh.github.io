@@ -192,11 +192,11 @@ define([
 				current = 0;
 
 			var intervall = setInterval(function(){
-				if(current < enter_sprites){
+				if(current < enter_sprites && app.preload_imgs.cache[0].complete == true ){
 					var class_name = "enter frame-"+current;
 					enter.attr("class", class_name);
 					current++;
-				}else{
+				}else if(app.preload_imgs.cache[0].complete){
 					stay.show();
 					clearInterval(intervall);
 					intervall = 0;
@@ -256,15 +256,38 @@ define([
 
 		check_first_render: false,
 
+		loadCss: function (url) {
+			var link = document.createElement("link");
+				link.type = "text/css";
+				link.rel = "stylesheet";
+				link.href = url;
+				document.getElementsByTagName("head")[0].appendChild(link);
+		},
+
 		new_style: function(){
-			$("#print_style").removeAttr("disabled");
+			app.loadCss("/css/print.css");
+		},
+
+		preload_imgs: function (srcs) {
+			if (!app.preload_imgs.cache) {
+				app.preload_imgs.cache = [];
+			}
+			var img;
+			for (var i = 0; i < srcs.length; i++) {
+				img = new Image();
+				img.src = srcs[i];
+				app.preload_imgs.cache.push(img);
+			}
 		},
 
 		render_content: function(print){
 			if( app.check_first_render == false){
-				var print = print || false;
+				if(typeof print == "undefined"){
+					var print = false;
+				}
+
 				app.experiences = new CollectionExp(experiences);
-				app.view_experiences = new ViewExps({collection: app.experiences, print: print, el: $("#time-line")});
+				app.view_experiences = new ViewExps({'collection': app.experiences, 'print': print, 'el': $("#time-line")});
 				var elem = app.view_experiences.render().el;
 				$("#all").append(elem);
 				app.check_first_render = true;
@@ -310,7 +333,7 @@ define([
 			var app_router = new Router;
 
 			// Check if they are looking for the print version.
-			if(Backbone.history.location.hash.indexOf("#/print") > -1 ){
+			if(Backbone.history.location.hash != "" && Backbone.history.location.hash.indexOf("#/print") > -1 ){
 				app.render_content(true);
 
 				// Trigger event for hide the images
@@ -321,7 +344,8 @@ define([
 
 
 			}else{
-				app.render_content();
+				app.preload_imgs(["http://statics.ideabile.com/img/works/me/mauro_enter.jpg"]);
+				app.render_content(false);
 				app.init_bg();
 
 				soundtrack.init();

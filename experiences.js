@@ -362,43 +362,44 @@ define([],function(){
 				{
 					url: "directness/004.png",
 					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/006.jpg",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/007.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/008.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/009.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/010.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/011.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/012.png",
-					name: "MailExpress png"
-				},
-				{
-					url: "directness/013.png",
-					name: "MailExpress Interface"
-				},
-				{
-					url: "directness/014.png",
-					name: "MailExpress Interface"
 				}
+				// },
+				// {
+					// url: "directness/006.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/007.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/008.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/009.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/010.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/011.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/012.png",
+					// name: "MailExpress png"
+				// },
+				// {
+					// url: "directness/013.png",
+					// name: "MailExpress Interface"
+				// },
+				// {
+					// url: "directness/014.png",
+					// name: "MailExpress Interface"
+				// }
 			]
 		},
 
@@ -573,27 +574,27 @@ define([],function(){
 					name: "Landing page"
 				},
 				{
-					url: "impronte/03.png",
+					url: "impronte/03.jpg",
 					name: "Landing page"
 				},
 				{
-					url: "impronte/04.png",
+					url: "impronte/04.jpg",
 					name: "Landing page"
 				},
 				{
-					url: "impronte/05.png",
+					url: "impronte/05.jpg",
 					name: "Landing page"
 				},
 				{
-					url: "impronte/06.png",
+					url: "impronte/06.jpg",
 					name: "Landing page"
 				},
 				{
-					url: "impronte/07.png",
+					url: "impronte/07.jpg",
 					name: "Landing page"
 				},
 				{
-					url: "impronte/08.png",
+					url: "impronte/08.jpg",
 					name: "Landing page"
 				}
 			]
