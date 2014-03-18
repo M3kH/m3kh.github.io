@@ -70,13 +70,23 @@ define([],function(){
 					category: "skills"
 				},
 				{
+					name: "Creativity",
+					hours: 12,
+					category: "skills"
+				},
+				{
 					name: "Graphic",
-					hours: 10,
+					hours: 4,
 					category: "skills"
 				},
 				{
 					name: "Data visualization",
 					hours: 10,
+					category: "skills"
+				},
+				{
+					name: "Continuous Integration",
+					hours: 5,
 					category: "skills"
 				}
 			]
