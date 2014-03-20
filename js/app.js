@@ -11,7 +11,12 @@ define([
 	"js/collections/experiences",
 	"js/views/experiences",
 
-	"js/utils/soundtrack"],
+	"js/utils/soundtrack",
+
+	"wurfl"
+
+	],
+
 
 	function ( $, stars, triangles, experiences, Router, CollectionExp, ViewExps, soundtrack) {
 
@@ -46,7 +51,9 @@ define([
 				init: function(attributes){
 					var action = this;
 					setTimeout(function(){
-						app.bg.stars.start();
+						if(app.mobile == false){
+							app.bg.stars.start();
+						}
 					},25);
 					app.hideMenu();
 					app.onAnimationEnd("#main", function(){
@@ -60,7 +67,9 @@ define([
 				destroy: function(cb, attributes){
 					// bg_stars.destroy(cb, attributes);
 					setTimeout(function(){
-						app.bg.stars.del();
+						if(app.mobile == false){
+							app.bg.stars.del();
+						}
 					},25);
 
 					app.onAnimationEnd("#main", function(){
@@ -77,7 +86,9 @@ define([
 				init: function(attributes){
 					var action = this;
 					setTimeout(function(){
-						app.bg.stars.start();
+						if(app.mobile == false){
+							app.bg.stars.start();
+						}
 						$("#bgs > canvas").css({"opacity": 0.2});
 					},25);
 					app.my_photo_animation_in();
@@ -89,10 +100,12 @@ define([
 				destroy: function(cb, attributes){
 					// bg_stars.destroy(cb, attributes);
 					app.my_photo_animation_out();
-					setTimeout(function(){
-						$("#bgs > canvas").css({"opacity": 1});
-						app.bg.stars.del();
-					},25);
+						setTimeout(function(){
+							$("#bgs > canvas").css({"opacity": 1});
+							if(app.mobile == false){
+								app.bg.stars.del();
+							}
+						},25);
 					setTimeout(function(){
 						$("#me").css({'opacity': 0}).animate({'opacity': 1}, 500).css({'display': 'none'});
 					},4000);
@@ -162,7 +175,9 @@ define([
 			timeline: {
 				init: function(id){
 					setTimeout(function(){
-						app.bg.triangles.start();
+							if(app.mobile == false){
+								app.bg.triangles.start();
+							}
 					},25);
 					if(typeof id == "undefined"){
 						app.view_experiences.show(0);
@@ -174,7 +189,9 @@ define([
 					// render_exp.hide();
 					app.view_experiences.hide();
 					setTimeout(function(){
-						app.bg.triangles.del();
+							if(app.mobile == false){
+								app.bg.triangles.del();
+							}
 					},25);
 					setTimeout(function(){
 						cb(attributes);
@@ -317,9 +334,11 @@ define([
 		},
 
 		init_bg: function(){
-			app.bg = {};
-			app.bg.stars =  new stars({el: "#bgs"});
-			app.bg.triangles =  new triangles({el: "#bgs"});
+			if(app.mobile == false){
+				app.bg = {};
+				app.bg.stars =  new stars({el: "#bgs"});
+				app.bg.triangles =  new triangles({el: "#bgs"});
+			}
 		},
 
 		init: function(){
@@ -328,6 +347,7 @@ define([
 			// render_exp.init("#timeLine", experiences, bg_triangles.changeColor);
 
 			// }, 25);
+			app.mobile = WURFL.is_mobile;
 
 			// Start the router
 			var app_router = new Router;
@@ -345,10 +365,14 @@ define([
 
 			}else{
 				app.preload_imgs(["http://statics.ideabile.com/img/works/me/mauro_enter.jpg"]);
-				app.render_content(false);
-				app.init_bg();
 
-				soundtrack.init();
+				app.render_content(false);
+
+				if(app.mobile == false){
+					app.init_bg();
+					soundtrack.init();
+				}
+
 				app_router.on('route:print', function () {
 					window.location.reload();
 				});

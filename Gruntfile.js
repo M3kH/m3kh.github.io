@@ -14,7 +14,8 @@ grunt.initConfig({
 					"paper": "bower_components/paper/dist/paper-core.min",
 					"jquery": "bower_components/jquery/dist/jquery.min",
 					"d3": "bower_components/d3/d3.min",
-					"magnific-popup": "bower_components/magnific-popup/dist/jquery.magnific-popup.min"
+					"magnific-popup": "bower_components/magnific-popup/dist/jquery.magnific-popup.min",
+					"wurfl": "http://wurfljs.com/wurfl"
 				},
 				shim: {
 
