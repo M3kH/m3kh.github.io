@@ -1,5 +1,4 @@
-#My personal website
-I start to looking for a new job so I took the opportunity for restyle my website CV.
+#My Website/CV.
 I try to build an interactive resume website with animation wich remeber me old and linear games.
 
 This took me seven days ( with less or more 8h working ours ).

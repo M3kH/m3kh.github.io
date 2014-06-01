@@ -253,3 +253,27 @@ dl > *, dl a{
 	color: #333 !important;
 	border-color: #000 !important;
 }
+
+/*
+ * Additional changes for Ripe.net
+ */
+#skills_new, #languages_new, #software_new{
+	overflow: hidden;
+	text-align: center;
+}
+
+.widget-list{
+	list-style: none;
+	clear: both;
+}
+
+.widget-list li{
+	list-style: none;
+	/*float: left;*/
+	display: inline-block;
+	padding: 5px;
+	border: 2px solid #CCC;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 0.7em;
+}
