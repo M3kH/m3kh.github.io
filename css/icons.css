@@ -1,0 +1,90 @@
+@font-face {
+	font-family: 'ideicons';
+	src:url('../fonts/ideicons.eot?-2rfvam');
+	src:url('../fonts/ideicons.eot?#iefix-2rfvam') format('embedded-opentype'),
+		url('../fonts/ideicons.woff?-2rfvam') format('woff'),
+		url('../fonts/ideicons.ttf?-2rfvam') format('truetype'),
+		url('../fonts/ideicons.svg?-2rfvam#ideicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'ideicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon.inverse{
+	color: #FFF;
+}
+
+.icon.x2{
+	font-size: 2em;
+}
+
+.icon-googleplus:before {
+	content: "\e600";
+}
+.icon-twitter:before {
+	content: "\e601";
+}
+.icon-linkedin:before {
+	content: "\e602";
+}
+.icon-github:before {
+	content: "\e603";
+}
+.icon-pie:before {
+	content: "\e604";
+}
+.icon-link:before {
+	content: "\e605";
+}
+.icon-earth:before {
+	content: "\e606";
+}
+.icon-newspaper:before {
+	content: "\e607";
+}
+.icon-arrow-right:before {
+	content: "\e608";
+}
+.icon-arrow-left:before {
+	content: "\e609";
+}
+.icon-user:before {
+	content: "\e60a";
+}
+.icon-pictures:before {
+	content: "\e60b";
+}
+.icon-bars:before {
+	content: "\e60c";
+}
+.icon-graph:before {
+	content: "\e60d";
+}
+.icon-tools:before {
+	content: "\e034";
+}
+.icon-target:before {
+	content: "\e04e";
+}
+.icon-puzzle:before {
+	content: "\e026";
+}
+.icon-beaker:before {
+	content: "\e03c";
+}
+.icon-genius:before {
+	content: "\e046";
+}

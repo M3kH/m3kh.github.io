@@ -1,0 +1,279 @@
+body{
+	background: #FFF;
+}
+
+body.no-img img, body.no-img .charts, body.no-img svg{
+	display: none !important;
+}
+
+body.no-img #skills, body.no-img #languages, body.no-img #software{
+	display: none !important;
+}
+
+a, a:hover{
+	color: #000 !important;
+}
+
+#all{
+	display: block;
+	height: auto !important;
+	overflow: visible;
+	margin-top: 20px;
+}
+
+
+.panel > .space > div > svg {
+font-size: 18px !important;
+}
+
+.panel > .space > div {
+font-size: 12px;
+}
+
+.eco-print {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #E5E5E5;
+	border-bottom: 2px solid #ccc;
+	z-index: 33;
+	display: block;
+}
+
+.eco-print div {
+	padding: 10px;
+	display: none;
+}
+
+.eco-print .active{
+	display: block;
+}
+
+#educations{
+	font-size: 0.9em !important;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+#educations h2, #educations  h3{
+	margin: 0;
+}
+#educations h2{
+	font-size: 2em !important;
+	margin-bottom: 10px;
+}
+#educations  h3{
+	font-size: 1.4em !important;
+}
+
+.panel{
+	display: block !important;
+	color: #333 !important;
+	background: none !important;
+	/*width: 100% !important;*/
+	width: 210mm !important;
+	width: 290mm;
+	padding: 0 20px 20px !important;
+}
+
+.panel > .left, .panel > .right{
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+.panel > .right > div{
+	margin-bottom: 10px;
+}
+
+.experencies{
+	/*column gap*/
+}
+
+.line-del{
+	text-decoration: line-through;
+}
+#me{
+	display: none !important;
+}
+
+#header-print{
+	display: block !important;
+	text-align: left !important;
+	border-bottom: 2px solid #CCC;
+	overflow: hidden;
+}
+
+#header-print h3{
+	margin: 0;
+}
+
+#header-print > div{
+	float: left;
+	width: 50%;
+	margin: 0;
+	text-align: left;
+}
+
+#header-print .contacts{
+	margin-top: 10px;
+	text-align: left;
+	font-size: 0.7em;
+}
+#header-print .contacts h4{
+	margin: 0;
+}
+
+#header-print .contacts p {
+	margin: 0;
+}
+
+#header-print .right{
+	text-align: right;
+}
+#header-print .right img{
+	width: 180px;
+	height: 167px;
+	padding: 4px;
+	border: 1px solid #ccc;
+}
+
+#educations .year{
+	font-weight: bold;
+}
+
+.visible-print{
+	/*display: block !important;*/
+}
+
+#main{
+	display: none !important;
+}
+.experencies > li{
+	padding-top: 0;
+	background: none !important;
+	display: block !important;
+	border-bottom: 2px solid #CCC;
+	/*width: 50% !important;*/
+	/*float: left;*/
+}
+
+.experencies > li .cross {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	z-index: 2;
+}
+.experencies > li.hide{
+	display: none !important;
+}
+
+.experencies > li:hover .cross {
+	display: block;
+}
+.experencies li .year{
+	color: #FFF;
+	position: absolute;
+	width: 100%;
+	z-index: 3;
+}
+.experencies li:hover{
+	color: #333 !important;
+}
+.experencies-nav{
+	display: none !important;
+}
+
+.experencies li .pie-chart{
+	width: 350px !important;
+}
+
+.experencies li .pie-chart .labels{
+	width: 350px !important;
+	height: 150px !important;
+}
+
+.experencies li .pie-chart .labels span{
+	padding: 20px 100px;
+}
+
+#bg-noise{
+	opacity: 0.1;
+}
+.show_gallery{
+	display: none;
+}
+.show_gallery{
+	display: none;
+}
+.panel .space {
+	width: auto !important;
+}
+.panel .space > h2 {
+	padding-bottom: 0px !important;
+	border-bottom: 1px solid #000;
+}
+.experencies{
+	width: auto;
+}
+.experencies li .title{
+	min-height: 100px !important;
+	height: 100px !important;
+}
+.experencies li .title .gallery{
+	height: 100px !important;
+	height: 127px !important;
+}
+
+.experencies > li div.year {
+	border-bottom: 1px solid #000;
+	background: none;
+}
+
+.experencies > li div.year span {
+	background: #FFF;
+	color: #000;
+}
+
+.overlay{
+	width: 100% !important;
+}
+
+.overlay h2{
+	/*text-shadow: 0px 0px 13px #000;*/
+}
+
+.panel h2 {
+	letter-spacing: normal !important;
+	text-shadow: none !important;
+	margin-bottom: 12px !important;
+}
+
+dl > *, dl a{
+	color: #333 !important;
+	border-color: #000 !important;
+}
+
+/*
+ * Additional changes for Ripe.net
+ */
+#skills_new, #languages_new, #software_new{
+	overflow: hidden;
+	text-align: center;
+}
+
+.widget-list{
+	list-style: none;
+	clear: both;
+}
+
+.widget-list li{
+	list-style: none;
+	/*float: left;*/
+	display: inline-block;
+	padding: 5px;
+	border: 2px solid #CCC;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	font-size: 0.7em;
+}

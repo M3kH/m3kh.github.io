@@ -1,0 +1,37 @@
+{
+  "name": "Ideabile website",
+  "version": "0.1",
+  "authors": [
+    "Mauro Mandracchia <info@ideabile.com>"
+  ],
+  "description": "My personal website build with Paper.js andD3.js",
+  "main": "js/app.js",
+  "keywords": [
+    "paper.js",
+    "d3.js",
+    "portfolio",
+    "animations",
+    "htm5",
+    "svg"
+  ],
+  "license": "MIT",
+  "homepage": "http://www.ideabile.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "3.4.2",
+    "paper": "0.9.15",
+    "requirejs": "2.1.11",
+    "jquery": "2.1.0",
+    "animate.css": "3.1.0",
+    "bootstrap": "3.1.1",
+    "magnific-popup": "0.9.9",
+    "backbone": "1.1.2",
+    "isMobile": "~0.3.6"
+  }
+}

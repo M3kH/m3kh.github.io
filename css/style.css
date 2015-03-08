@@ -1,0 +1,504 @@
+* {margin: 0; padding: 0;}
+
+body {
+	margin: 0;
+	font-family: Lucida, Helvetica, Arial, sans-serif;
+	text-align: center;
+	background: #000;
+	color: #555;
+	overflow-y: scroll;
+	/*background: url("../images/sf-b.png");*/
+	/*background-color: #d8d8d8;*/
+}
+a {
+	color: #FFF;
+}
+a:hover {
+	color: #CCC;
+}
+
+a.disabled, a.disabled:hover {
+	text-decoration: line-through;
+}
+
+
+/*
+ * Svg Elements
+ */
+#background, #myCanvas{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#bgs .bg{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	display: none;
+	opacity: 0;
+	transition: all ease-in 2s;
+}
+
+#bgs .bg.active{
+	display: block;
+	opacity: 1;
+}
+
+#bg-noise{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: url('http://statics.ideabile.com/img/noise.png');
+	z-index: -1;
+	opacity: 0.5;
+}
+
+#crown{
+	width: 0;
+	height: 0;
+}
+
+#ideabile{
+	display: none;
+}
+/*
+ * Nav
+ */
+.nav a {
+	margin: 0 10px;
+	font-size: 16px;
+	font-variant: small-caps;
+	text-decoration: none;
+	letter-spacing: 5px;
+}
+
+.nav {
+	background: #000;
+	padding: 10px;
+	display: none;
+	z-index: 333;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.nav.active{
+	display: block;
+}
+
+
+/*
+ * All and panels
+ */
+#all {
+	display: table;
+	z-index: 2;
+	/* margin: 0 auto; */
+	text-align: center;
+	height: 100%;
+	width: 100%;
+	padding-top: 30px;
+	overflow-y: visible;
+	/* text-align: center; */
+}
+
+#all .panel {
+	z-index: 3;
+	font-size: 18px;
+	color: #FFF;
+	padding: 20px;
+	display: none;
+	vertical-align: middle;
+	background: none;
+	/*background-color: rgba(0,0,0,0.8);*/
+	margin: 0 auto;
+	text-align: center;
+	/* height: 100%; */
+	/* width: 100%; */
+}
+
+#all .panel.active{
+	display: table-cell;
+}
+
+#all .panel#timeLine{
+	width: 800px;
+	overflow: hidden;
+	background: none;
+	text-align: center;
+}
+
+#all .panel > div.space{
+	margin: 0 auto;
+	width: 800px;
+}
+
+
+/*
+ * Eco print header
+ */
+.eco-print {
+	display: none;
+}
+
+.footer-print{
+	display: none;
+	text-align: center;
+	width: 100%;
+	background: #CCC;
+	font-size: 12px;
+}
+
+.footer-print div{
+	color: #444;
+	margin: 0 auto;
+	text-align: center;
+	width: 800px;
+}
+
+
+/*
+ * Panel and Experiences title
+ */
+.experencies > li > h2, .panel h2{
+	margin-bottom: 20px;
+	font-variant: small-caps;
+	letter-spacing: 0.9em;
+	font-size: 25px;
+	margin-top: 10px;
+	text-shadow: 1px 1px #000;
+}
+
+.panel .space > h2{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #FFF;
+}
+
+.experencies .description h2{
+	font-size: 1.2em;
+	letter-spacing: 0.4em;
+}
+
+
+/*
+ * Experiences
+ */
+.experencies{
+	list-style: none;
+	margin: 0 auto;
+	width: 70%;
+}
+
+.experencies > li{
+	list-style: none;
+	position: relative;
+	display: none;
+	background-color: rgba(0,0,0,0.8);
+	overflow: hidden;
+	padding: 20px;
+}
+.experencies > li.active{
+	display: block;
+}
+
+/*
+ * Experiences nav
+ */
+.experencies-nav{
+	width: 100%;
+	margin: 0 auto;
+	clear: both;
+	margin: 0 auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.experencies-nav a {
+	padding: 10px;
+	margin: 0;
+	margin-top: 25%;
+	text-decoration: none;
+	background: #FFF;
+	color: #000;
+	transition: all ease-in 90ms;
+}
+.experencies-nav a.prev {
+	float: left;
+}
+.experencies-nav a.next {
+	float: right;
+}
+
+.experencies-nav .next:hover {
+	padding-right: 40px;
+}
+
+.experencies-nav .prev:hover {
+	padding-left: 40px;
+}
+
+/*
+ * Experiences url
+ */
+.experencies > li .url{
+	display: none;
+}
+
+/*
+ * Experiences company
+ */
+.experencies > li div.company{
+	display: none;
+}
+/*
+ * Experiences year
+ */
+.experencies > li div.year{
+	border-bottom: 1px solid #FFF;
+	line-height: 0px;
+	background: #000;
+}
+.experencies > li div.year span{
+	background: #000;
+	padding: 0px 16px;
+	margin-bottom: -8px;
+}
+
+/*
+ * Experiences gallery
+ */
+	div.title{
+		 overflow: hidden;
+		 display: block;
+		 min-height: 300px;
+	}
+
+	div.title > .overlay{
+		z-index: 20;
+		position: absolute;
+		display: block;
+		width: 100%;
+	}
+
+	div.title > .gallery{
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    overflow: hidden;
+	    z-index: 0;
+	    height: 327px;
+	    opacity: 0.5;
+		transition: all ease-in 2s;
+		margin-left: -20px;
+		background-position: center center;
+	}
+	div.title > .gallery img{
+		display: none;
+	}
+	.mfp-content{
+		text-align: center;
+	}
+
+/*
+ * Experiences description
+ */
+.experencies > li div.description{
+	text-align: left;
+	margin-top: 20px;
+	font-size: 0.84em;
+}
+
+dl{
+	margin-top: 20px;
+}
+
+dl > * {
+	border-bottom: 1px dashed #fff;
+	margin-bottom: 10px;
+	font-size: 0.9em;
+}
+dl > dt {
+	font-variant: small-caps;
+	letter-spacing: 1.5;
+	font-weight: normal;
+}
+dl > dd {
+	text-align: left;
+	padding-left: 10px;
+	border-left: 1px dashed;
+	padding-bottom: 10px;
+}
+
+.experencies > li div.description > ul{
+	margin: 30px;
+	list-style-type: decimal-leading-zero;
+}
+
+.experencies > li div.description > ul > li{
+	padding-left: 10px;
+	margin-bottom: 20px;
+	color: #555;
+	transition: all ease-in 1s;
+}
+.experencies > li div.description > ul > li:hover{
+	color: #FFF;
+}
+
+/*
+ * Experiences Charts
+ */
+.experencies > li div.charts{
+	text-align: center;
+}
+
+.experencies > li div.spacer {
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.experencies > li div.charts div.pie-chart{
+	text-align: center;
+	position: relative;
+	width: 200px;
+	height: 160px;
+	display: inline-block;
+}
+
+.pie-chart div.labels > div.selected > span.value {
+	clear: both;
+	display: block;
+	font-size: 24px;
+}
+
+.pie-chart div.labels{
+	display: table;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	width: 200px;
+	height: 160px;
+}
+
+.pie-chart div.chart {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.pie-chart div.labels div.selected{
+	display: none !important;
+}
+
+.pie-chart div.labels span.default, .pie-chart div.labels div.selected{
+	font-size: 14px;
+	display: table-cell;
+	vertical-align: middle !important;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+	padding: 20px 30px;
+}
+
+.pie-chart div.labels.active div.selected{
+	display: table-cell !important;
+}
+.pie-chart div.labels.active .default{
+	display: none !important;
+}
+
+.experencies > li.active{
+	display: block;
+}
+
+
+/*
+ * Main Nav
+ */
+.panel#main, .panel#me{
+	font-size: 1.2em;
+}
+
+#main > div, #me > div {
+	width: 340px;
+	border-radius: 200px;
+	border-color: rgba(0,0,0,0.4);
+	box-shadow: rgba(0,0,0,0.4) 0 0 10px;
+	background-color: rgba(0,0,0,0.4);
+	margin: 0 auto;
+	padding: 40px 50px;
+	margin-top: -20px;
+}
+
+#me > div{
+	width: 700px;
+	font-size: 14px;
+}
+
+.me{
+	display: none !important;
+}
+.me-sprite{
+	display: block;
+	width: 92px;
+	height: 92px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	border-radius: 100px;
+	border: 2px solid #FFF;
+}
+.me-sprite > div{
+	width: 150px;
+	height: 92px;
+	margin: 0 auto;
+	margin-left: -20px;
+}
+
+#main > div > p {
+	color: #555;
+	margin: 0 0 0 0;
+	padding: 0
+	transition: all ease-in 1s;
+}
+
+#main > div > p {
+	color #FFF;
+}
+
+a.social:hover{
+	text-decoration: none !important;
+}
+a.social:hover .icon{
+	transition: all ease-in 1s;
+	color: #FFF;
+}
+
+a.social:hover .icon-twitter{
+	color: #00aced;
+}
+a.social:hover .icon-googleplus{
+	color: #dd4b39;
+}
+a.social:hover .icon-github{
+	color: #DBBA0C;
+}
+a.social:hover .icon-linkedin{
+	color: #007bb6;
+}
+
+.ie-warning{
+
+}
+
+.ie-warning a{
+	color: #FFF !important;
+}
