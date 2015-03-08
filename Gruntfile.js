@@ -4,9 +4,21 @@ module.exports = function(grunt) {
 grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
 	clean: ["dist"],
+	concat_css: {
+    all: {
+      src: [
+				"bower_components/bootstrap/dist/css/bootstrap.min.css",
+				"bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
+				"bower_components/magnific-popup/dist/magnific-popup.css",
+				"css/*.css", "!css/print.css"],
+      dest: "dist/style.css"
+    },
+  },
 	requirejs: {
 		compile: {
 			options: {
+
+				almond: true,
 
 				paths: {
 					"underscore": "bower_components/underscore/underscore",
@@ -15,8 +27,9 @@ grunt.initConfig({
 					"jquery": "bower_components/jquery/dist/jquery.min",
 					"d3": "bower_components/d3/d3.min",
 					"magnific-popup": "bower_components/magnific-popup/dist/jquery.magnific-popup.min",
-					"wurfl": "http://wurfljs.com/wurfl"
+					"wurfl": "bower_components/isMobile/isMobile.min"
 				},
+
 				shim: {
 
 					'backbone': {
@@ -27,8 +40,10 @@ grunt.initConfig({
 						deps: ['jquery']
 					}
 				},
+
 				baseUrl: ".",
-				name: "js/main",
+				name: "node_modules/almond/almond",
+				include: ['js/main'],
 				out: "dist/ideabile.js"
 			}
 		}
@@ -42,6 +57,7 @@ grunt.initConfig({
 	}
 });
 grunt.loadNpmTasks('grunt-contrib-requirejs');
+grunt.loadNpmTasks('grunt-concat-css');
 grunt.loadNpmTasks('grunt-exec');
 
 // Default task(s).

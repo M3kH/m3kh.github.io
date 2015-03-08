@@ -343,11 +343,7 @@ define([
 
 		init: function(){
 
-			// setTimeout(function(){
-			// render_exp.init("#timeLine", experiences, bg_triangles.changeColor);
-
-			// }, 25);
-			app.mobile = WURFL.is_mobile;
+			app.mobile = isMobile.any;
 
 			// Start the router
 			var app_router = new Router;

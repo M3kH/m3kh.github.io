@@ -17,9 +17,12 @@
   },
   "homepage": "https://github.com/M3kH/ideabile.com",
   "dependencies": {
-    "requirejs": "^2.1.11",
+    "almond": "^0.3.1",
     "grunt": "^0.4.4",
+    "grunt-concat-css": "^0.3.1",
     "grunt-contrib-requirejs": "^0.4.3",
-    "grunt-exec": "^0.4.5"
+    "grunt-exec": "^0.4.5",
+    "mobile-detect": "^0.4.3",
+    "requirejs": "^2.1.11"
   }
 }

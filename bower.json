@@ -31,6 +31,7 @@
     "animate.css": "3.1.0",
     "bootstrap": "3.1.1",
     "magnific-popup": "0.9.9",
-    "backbone": "1.1.2"
+    "backbone": "1.1.2",
+    "isMobile": "~0.3.6"
   }
 }
