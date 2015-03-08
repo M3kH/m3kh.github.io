@@ -4,6 +4,16 @@ module.exports = function(grunt) {
 grunt.initConfig({
 	pkg: grunt.file.readJSON('package.json'),
 	clean: ["dist"],
+	concat_css: {
+    all: {
+      src: [
+				"bower_components/bootstrap/dist/css/bootstrap.min.css",
+				"bower_components/bootstrap/dist/css/bootstrap-theme.min.css",
+				"bower_components/magnific-popup/dist/magnific-popup.css",
+				"css/*.css", "!css/print.css"],
+      dest: "dist/style.css"
+    },
+  },
 	requirejs: {
 		compile: {
 			options: {
@@ -47,6 +57,7 @@ grunt.initConfig({
 	}
 });
 grunt.loadNpmTasks('grunt-contrib-requirejs');
+grunt.loadNpmTasks('grunt-concat-css');
 grunt.loadNpmTasks('grunt-exec');
 
 // Default task(s).
