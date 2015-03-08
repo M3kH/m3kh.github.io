@@ -410,7 +410,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 								tmpl += "}); %> </dd>";
 							}
 						tmpl += "</dl>";
-						return _.template(tmpl, data);
+						return _.template(tmpl)(data);
 					}
 					return "";
 				}else{
@@ -430,7 +430,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 						// tmpl += "<% } ";
 					tmpl += "<%  }); %>";
 
-				return _.template(tmpl, {images: images, base: base_url});
+				return _.template(tmpl)({images: images, base: base_url});
 			},
 
 			render_years: function(attributes){
@@ -451,7 +451,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 
 				tmpl += "<div class='cross'><button class='btn btn-danger btn-xs hide-element'>Don't print this</button></div>";
 				tmpl += "<div class='row'>";
-					if( company_desc != "" && company_desc!= false){
+					if( company_desc != "" && company_desc != false ){
 						/*
 						 * Render the title with the company desc table
 						 */
@@ -491,9 +491,9 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 			},
 
 			tmpl: function(attributes){
+
 				var tmpl = '',
 					glr_button = '';
-				// console.log( this.options.print );
 
 				//This render the gallery
 				if( typeof attributes.images != "undefined" && attributes.images.length > 0 ){
@@ -542,7 +542,7 @@ define(['backbone', 'underscore', 'jquery', 'd3', 'companies', 'magnific-popup']
 					tmpl = this.tmpl(attributes);
 				}
 
-				return _.template(tmpl, attributes);
+				return _.template(tmpl)(attributes);
 			},
 
 			waiting_rendering: {},
